@@ -1,0 +1,83 @@
+.tabs {
+  float: none;
+  list-style: none;
+  text-align: left;
+  width: 50px;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    color: $font;
+    border-bottom: 0;
+    position: relative;
+    right: 48px;
+    width: 50px;
+    outline: 0;
+    @include transition(all 0.3s ease-in-out);
+    @include user-select(none);
+    &:hover {
+      background-color: $accent;
+      &::after {
+        overflow: visible;
+      }
+    }
+    &::after {
+      transform: rotate(-90deg);
+      // content: attr(title);
+      display: inline-block;
+      position: absolute;
+      overflow: hidden;
+      z-index: 99999;
+      top: 50px;
+      width: 0;
+      text-align: right;
+      @include transition(all 0.3s ease-in-out);
+    }
+  }
+  .tab-content{
+    display: none; 
+    overflow: scroll;
+    font-size: 17px;
+    padding: 25px;  
+    color: $font;
+    background-color: $background;
+    bottom: 10px;
+    position: fixed;
+    width: 900px;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    padding-bottom: 200px;
+    @include transition(linear .5s);
+    &::after {
+      width: 100%;
+      height: 10px;
+      display: block;
+      background: $accent;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      content: "";
+      z-index: 999;
+  }
+  }
+  //The Magic
+  [id^="tab"]:checked + label { 
+    border-right: 5px solid $accent;
+    width: 45px;
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}

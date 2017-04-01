@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Index</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="css/index.css">
+  
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Wire+One|Nova+Mono" 
+    rel="stylesheet">
+  
+  <script language="JavaScript" type="text/javascript" src="js/isotope.pkgd.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/fit-columns.js"></script>
+  
+  <script language="JavaScript" type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+  <div class="container" id="container">
+    
+    <div class="character">
+      <div class="character-name"> Template </div>
+      <a href="Pages/Template/template-index.html"> Sheet </a>
+    </div>
+    
+    <div class="character">
+      <div class="character-name"> Xuhwang Yeon Jun </div>
+      <a href="Pages/Jun/jun-index.html"> Sheet </a>
+    </div>
+    
+    <div class="character">
+      <div class="character-name"> Evren Orhan Demir </div>
+      <a href="Pages/Evren/evren-index.html"> Sheet </a>
+    </div>
+    
+    <div class="character">
+      <div class="character-name"> Shae Ó Ríain </div>
+      <a href="Pages/Shae/shae-index.html"> Sheet </a>
+    </div>
+    
+  </div>
+</body>
+
+  <script type = "text/javascript" >
+  		    $(window).load(function() {
+  		      var $grid = $('div#container').isotope({});
+  		      $grid.isotope('reloadItems')
+  		      $grid.isotope({
+  		        sortBy: 'name',
+  		        filter: '*'
+  		      });
+  		    }); 
+  	</script>
+</html>

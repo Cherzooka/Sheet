@@ -1,0 +1,45 @@
+.linkback {
+  background: $background;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  @include transition(all linear 0.3s);
+  a {
+    display: none;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: $font;
+    @include transition(all linear 0.7s);
+  }
+  &::after {
+    content: "";
+    background: $font;
+    height: 15px;
+    width: 15px;
+    z-index: 99;
+    display: block;
+    transform: rotate(45deg);
+    position: fixed;
+    right: 17px;
+    bottom: 28px;
+    border-radius: 3px;
+    @include transition(all linear 0.3s);
+  }
+  &:hover {
+    width: 100px;
+    color: $font;
+    @include transition(all linear 0.3s);
+    &::after {
+      background: $accent;
+      @include transition(all linear 0.3s);
+    }
+    a {
+      display: block;
+      @include transition(all linear 0.7s);
+    }
+  }
+}

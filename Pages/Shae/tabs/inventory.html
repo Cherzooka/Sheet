@@ -1,0 +1,256 @@
+<block id="inventory">
+  <h1> Inventory </h1>
+    
+    <div class="equip" id="equip"> Equipment </div>
+    <div class="equipment" id="equipment"> 
+      <img src="img/shae-equip.png" />
+      
+      <div class="headgear">
+        < Equipped Headgear >
+      </div>
+      
+      <div class="facegear">
+        < Equipped Facegear >
+      </div>
+      
+      <div class="neckgear">
+        < Equipped Neckgear >
+      </div>
+      
+      <div class="shoulders">
+        < Equipped Pauldrons >
+      </div>
+      
+      <div class="body">
+        < Equipped Bodyarmor >
+      </div>
+      
+      <div class="torso">
+        < Equipped Torso >
+      </div>
+      
+      <div class="hands">
+        < Equipped Handgear >
+      </div>
+      
+      <div class="arms">
+        < Equipped Armgear >
+      </div>
+      
+      <div class="waist">
+        < Equipped Waistgear >
+      </div>
+      
+      <div class="pants">
+        < Equipped Pants >
+      </div>
+      
+      <div class="feet">
+        < Equipped Shoes >
+      </div>
+      
+      <div class="ring">
+        < Equipped Ring > <br>
+        < Equipped Ring >
+      </div> 
+      
+    </div>
+    
+    <div class="inv" id="equip"> Inventory </div>
+    
+    <div class="filters">
+        <div class="button-group" data-filter-group="type">
+          <h3>Filters</h3><br>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".melee-weapon"> <i class="flaticon-war" title="Melee Weaponry"></i></button>
+          <button class="button" data-filter=".ranged-weapon"> <i class="flaticon-comic" title="Ranged Weaponry"></i></button>
+          <button class="button" data-filter=".armor"> <i class="flaticon-armor" title="Armor"></i></button>
+          <button class="button" data-filter=".trinket"><i class="flaticon-fashion" title="Trinkets"></i></button>
+          <button class="button" data-filter=".survival-gear"> <i class="flaticon-games" title="Survival Gear"></i></button>
+          <button class="button" data-filter=".misc"> <i class="flaticon-money" title="Miscellaneous"></i></button>
+        </div>
+
+        <div class="sort-by-button-group">
+          <h3>Sorting</h3>
+          <button class="button is-checked" data-sort-by="original-order">ALL</button> |
+          <button class="button" data-sort-by="name">Name</button>
+          <button class="button" data-sort-by="count">Count</button>
+          <button class="button" data-sort-by="weight">Weight</button>
+          <button class="button" data-sort-by="type">Type</button>
+        </div>
+      </div>
+      
+    <!---
+      <div class="item"> 
+        <b class="item-name">THING</b>
+        <i class="item-number">x #</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a class="item-type" title-"Further Details"> # </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+    --->
+    
+    <div class="inventory" id="inventory">
+      
+      <div class="item melee-weapon"> 
+        <b class="item-name">Battleaxe</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> 4 lbs </a>
+          <a class="item-value"> 10 gp </a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a> Slashing (1d8) </a>
+          <a title="This weapon can be used with one or two hands. A damage 
+          value in paratheses appears with the property- the damage when the 
+          weapon is used with two hands to make a melee attack.">Versatile (1d10)</a>
+        </span><p> A double-headed axe with a long two-handed handle. The head 
+        is a decorated steel, and the handle of carved rowan. Overall, despite 
+        it's apparent age, it's a well made and quality weapon. The decoration 
+        on it seems to be Fjelltal runes. </p> 
+      </div>
+      
+      <div class="item armor"> 
+        <b class="item-name">Breastplate</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> 20 lbs </a>
+          <a class="item-value"> 400 gp </a>
+          <a class="item-type"> Armor </a>
+          <a> +4 AC + Dex (Max 2) </a>
+        </span><p> This armor consists of a fitted metal chest piece worn with 
+        supple leather. Although it leaves the legs and arms relatively 
+        unprotected, this armor provides good protection for the wearer's vital
+        organs while leaving the wearer relatively unencumbered. </p> 
+      </div>
+      
+      <div class="item melee-weapon ranged-weapon"> 
+        <b class="item-name">Handaxe</b>
+        <i class="item-number">x 2</i><span>
+          <a class="item-weight" title="2 lbs / each"> 4 lbs </a>
+          <a class="item-value" title="5 gp / each"> 10 gp </a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a> Slashing (1d6) </a>
+          <a title="A light weapon is small and easy to handle, making it ideal 
+          for use when fighting with two weapons.">Light</a>
+          <a title="If a weapon has the thrown property, you can throw the 
+          weapon to make a ranged attack.">Thrown (20/60)</a>
+        </span><p> A common handaxe, with an simple iron head, and a rowan 
+        handle. Primarily used for chopping word, or other basic tasks, but can 
+        make a decent weapon when needed. </p> 
+      </div>
+      
+      <div class="item ranged-weapon"> 
+        <b class="item-name">Shortbow</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> 2 lbs </a>
+          <a class="item-value"> 25 gp </a>
+          <a title="item-type">Ranged Weaponry</a>
+          <a>Piercing (1d6)</a>
+          <a>Range (80/320)</a>
+          <a>Two Handed</a>
+        </span><p> A simple shortbow made of yew. While simplistic and non 
+        decorated, it's a quality made bow. </p> 
+      </div>
+      
+      <div class="item trinket"> 
+        <b class="item-name">Viol</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> 1 lbs </a>
+          <a class="item-value"> 30 gp </a>
+          <a title="Item-type">Trinket</a>
+          <a> Musical Instrument </a>
+        </span><p> An intricately decorated and well worn viol made of maple. 
+        It appears to be well used, but remarkably well maintained. </p> 
+      </div>
+      
+      <div class="item trinket"> 
+        <b class="item-name">Wooden Ring</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a class="item-type"> Trinket </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> A simple wooden ring made of yew, adorned with fjelltal 
+        runes. </p> 
+      </div>
+      
+      <div class="item armor"> 
+        <b class="item-name">Costume</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> 4 lbs </a>
+          <a class="item-value"> 5 gp </a>
+          <a class="item-type"> Armor </a>
+          <a>0 AC + Dex </a>
+        </span><p> A colorful collection of clothing to be used in performance 
+        arts, or simply regular clothing for the more flamboyant. </p> 
+      </div>
+      
+      <div class="item melee-weapon ranged-weapon"> 
+        <b class="item-name">Dagger</b>
+        <i class="item-number">x 3</i><span>
+          <a class="item-weight" title="1 lb / each"> 3 lbs </a>
+          <a class="item-value" title="2 gp / each"> 6 gp </a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a> Piercing (1d4) </a>
+          <a> Finesse </a>
+          <a> Light </a>
+          <a> Thrown (20/60) </a>
+        </span><p> Simple Iron daggers for a variety of uses, from fighting, 
+        knife throwing, to letter opening. </p> 
+      </div>
+      
+      <div class="item ranged-weapon"> 
+        <b class="item-name">Arrows (20x) </b>
+        <i class="item-number">x 2</i><span>
+          <a class="item-weight" title="1 lb / each"> 2 lbs </a>
+          <a class="item-value" title="1 gp / each"> 2 gp </a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a>Ammunition</a>
+        </span><p> Iron tipped maple arrows, finished with chicken feathers. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Chest</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a class="item-type" title-"Further Details"> Miscellaneous </a>
+          <a>Container</a>
+        </span><p> A simple wooden chest decorated with Fjelltal runes. 
+        Holds 300 lbs of gear. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Map Case</b>
+        <i class="item-number">x 2</i><span>
+          <a class="item-weight" title="1 lb / each"> 2 lbs </a>
+          <a class="item-value" title="1 gp / each"> 2 gp </a>
+          <a class="item-type" title-"Further Details"> Miscellaneous </a>
+          <a>Container</a>
+        </span><p> This cylindrical leather case can hold up to ten rolled-up 
+        sheets of paper, or five rolled-up sheets of parchment.</p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Ink Bottle</b>
+        <i class="item-number">x 1</i><span>
+          <a class="item-weight"> - lbs </a>
+          <a class="item-value"> 10 gp </a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+    </div>
+</block>

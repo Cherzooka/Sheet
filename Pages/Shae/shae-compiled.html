@@ -1,0 +1,514 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Shae</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />  
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../../css/shae.css">
+  <link rel="stylesheet" type="text/css" href="../../css/flaticon.css">
+  <link href="../../css/font-awesome.css" rel="stylesheet">
+  
+  <script language="JavaScript" type="text/javascript" src="../../js/jquery-3.2.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Wire+One|Nova+Mono" 
+    rel="stylesheet">
+  
+  <script language="JavaScript" type="text/javascript" src="../../js/jquery.style-my-tooltips.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../js/isotope.pkgd.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../js/fit-columns.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script language="JavaScript" type="text/javascript" src="../../js/shared.js"></script>
+  
+  <link rel="import" id="basics-tab" href="tabs/basics.html">
+  <link rel="import" id="biography-tab" href="tabs/biography.html">
+  <link rel="import" id="statistics-tab" href="tabs/statistics.html">
+  <link rel="import" id="spellbook-tab" href="tabs/spellbook.html">
+  <link rel="import" id="inventory-tab" href="tabs/inventory.html">
+  <link rel="import" id="dialogues" href="../dial.html">
+
+</head>
+<body>
+  
+  <div class="gradient"> </div> 
+  <div class="side"> </div>
+  
+<!------------------------------------------------------------ TABS CONTENT --->
+
+  <ul class="tabs" role="tablist">
+  
+<!-------------------------------------------------------------- BASICS TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" 
+        tabindex="0" title="Basics"> 
+        <i class="fa fa-user-o" aria-hidden="true"></i> </label>
+      <div id="tab-content1" class="tab-content" role="tabpanel" 
+        aria-labelledby="Basics" aria-hidden="false">
+        
+    <!------------>
+    
+    <block class="basics"><block id="basics"><h1> Basics </h1>
+    
+    <div class="basic-info">
+      <h2> Shae Ó Ríain</h2>
+      <span> <a title="Variant">Human</a> <b>♦</b> 
+          <a title="Instrumentalist/Singer">Entertainer</a> <b>♦</b> 
+          <a title="Bard 3/Fight 3">Skáld</a> <b>♦</b> 
+          Sixth </span>
+    
+      <br><br>
+
+      <p> Sed in mi quis sem fringilla porta. Vestibulum justo nulla, faucibus 
+      eget tempor eget, dignissim ac velit. Proin vel egestas tellus. Donec 
+      consequat nisi vitae tempus tristique. In a mi eu ex imperdiet faucibus. 
+      Nulla sed pellentesque felis. Praesent efficitur blandit nulla in feugiat.
+      Sed sed magna efficitur, malesuada quam vitae, pulvinar nunc. Sed 
+      porttitor in diam eget egestas. Fusce ac nisi id augue varius congue. </p>
+    
+    </div>
+    
+    <div class="stat-block">
+      <div class="stat"> <b style="left: -30px;">STR</b> <span>16</span> <i>+3</i> 
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Atheletics </span>
+        </div>
+      </div>
+      <div class="stat"> <b>DEX</b> <span>12</span> <i>+1</i> 
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Acrobatics</span> <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Sleight of Hand</span> <br>
+          <span style="top:-34px;position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Stealth</span> <br>
+          </div>
+      </div>
+      <div class="stat"> <b>CON</b> <span>14</span> <i>+2</i>
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+        </div>
+      </div>
+      <div class="stat"> <b>INT</b> <span>08</span> <i>-1</i> 
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Arcana <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> History <br> </span>
+          <span style="position:relative;top:-34px;"><i class="fa fa-circle-o" aria-hidden="true"></i> Investigation <br> </span>
+          <span style="position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Nature <br> </span>
+          <span style="position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Religion <br> </span>
+          </div>
+      </div>
+      <div class="stat"> <b>WIS</b> <span>09</span> <i>-1</i> </div>
+      <div class="stat"> <b>CHA</b> <span>14</span> <i>+2</i> </div>
+    </div>
+    
+    <div class="alignment">
+      <h3>Alignment</h3>
+    <div class="alignment-label turn" style="top: 77px; right: 50px;"> Chaotic </div>
+    <div class="alignment-label" style="left: 5px;"> Good </div>
+    <table><tr>
+        <td title="Chaotic Good">.</td>
+        <td class="selected" title="Neutral Good">.</td>
+        <td title="Lawful Good">.</td></tr><tr>
+        <td title="Chaotic Neutral">.</td>
+        <td title="True Neutral">.</td>
+        <td title="Lawful Neutral">.</td></tr><tr>
+        <td title="Chaotic Evil">.</td>
+        <td title="Neutral Evil">.</td>
+        <td title="Lawful Evil">.</td></tr>
+    </table>
+    <div class="alignment-label" style="left: 5px; top: -14px;"> Evil </div>
+    <div class="alignment-label turn" style="left: 60px; bottom: 91px;"> Lawful </div>
+    
+    </div>
+</block> </block>
+
+    </li>
+
+<!----------------------------------------------------------- BIOGRAPHY TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" 
+        tabindex="0" title="Biography"> 
+        <i class="fa fa-address-book-o" aria-hidden="true"></i> </label>
+      <div id="tab-content2" class="tab-content" role="tabpanel" 
+        aria-labelledby="Biography" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="biography"><block id="biography">
+  <h1> Biography </h1>
+  
+  <div class="bio-info">
+    <span> <b>Full Name</b> Séaghdha Þórir Ó Ríain <br> [ ᛋᛠᚷᚺᛞᚺᚨ᛫ᚦᛟᚱᛁᚱ᛫ᛟ᛫ᚱᛁᚨᛁᚾ ] </span>
+    <span> <b>Race</b> Human 
+      [<button id="fjellfolk-open">Fjellfolk</button>-<button id="hito-open">Hito</button>] </span>
+    <span> <b>Gender</b> Male [he/him] </span>
+    <span> <b>Height</b> 5'9" </span>
+    <span> <b>Diety</b> [diety] </span>
+    <span> <b>Languages</b> <button id="fjelltal-open">Fjelltal</button>, Common </span>
+    <span> <b>Birthplace</b> <button id="fegard-open">Fégård</button>, <button id="kaldrfjoll-open">Kaldrfjǫll</button> </span>
+  </div>
+  
+  <div class="bio-container">
+    <div class="bio-block">
+      <h2>Personality</h2>
+      <p>This section is for talking about Personality Traits, Ideals, Flaws,
+      and just anything related to talking about the character's personality.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a 
+      condimentum metus. Donec ornare mi lorem, eget consectetur quam mattis ut.
+      Aenean at eros nec elit imperdiet condimentum ac quis nisi. Quisque nulla
+      est, commodo non tempus eget, condimentum sed ante. Ut id sem vel risus 
+      ultrices cursus eu vitae nulla. Vestibulum ac lacus sagittis, elementum 
+      diam quis, convallis neque. Duis nec velit sit amet elit fringilla 
+      vestibulum luctus in augue. Sed ullamcorper lectus a diam elementum 
+      ultricies. Sed ultrices blandit lorem ut varius. Sed semper posuere 
+      lorem, eu bibendum arcu laoreet at. Duis vulputate fringilla massa at 
+      volutpat. Duis tempus viverra pharetra. Morbi gravida magna ut justo 
+      hendrerit, non fringilla nisi tempor. Cras quis tellus velit. 
+      Pellentesque eu velit sed nibh gravida commodo ut ut dui.</p>
+
+      <p>Donec eros diam, sollicitudin sed massa in, consequat consequat odio. 
+      Duis a velit vel elit porttitor varius. Etiam consequat velit libero, ut 
+      cursus enim tristique eu. Vestibulum congue mattis ultrices. Aliquam 
+      lacinia lobortis felis eu rhoncus. Vivamus id arcu neque. Nam eu urna 
+      nulla. Aliquam erat volutpat.</p>
+
+      <p>Quisque consequat gravida erat et vehicula. Nulla rhoncus viverra nisl
+      vel vulputate. Pellentesque imperdiet orci a nulla euismod, a fermentum 
+      turpis imperdiet. Praesent eleifend condimentum elit a congue. Morbi 
+      porta ullamcorper mi quis maximus. Proin feugiat ligula eget nunc 
+      placerat consequat. Donec dui ex, posuere eget neque eget, pulvinar 
+      rutrum purus. Praesent et leo nunc. Nulla vitae ligula vitae nisi 
+      ullamcorper vehicula vel at enim. Nullam pretium feugiat sodales. Aliquam
+      tempor arcu ac consequat feugiat.</p>
+    </div>
+  
+    <div class="bio-block">
+      <h2>Biography</h2>
+      <p>This section is for further details into the character's backstory 
+      and history.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a 
+      condimentum metus. Donec ornare mi lorem, eget consectetur quam mattis ut.
+      Aenean at eros nec elit imperdiet condimentum ac quis nisi. Quisque nulla
+      est, commodo non tempus eget, condimentum sed ante. Ut id sem vel risus 
+      ultrices cursus eu vitae nulla. Vestibulum ac lacus sagittis, elementum 
+      diam quis, convallis neque. Duis nec velit sit amet elit fringilla 
+      vestibulum luctus in augue. Sed ullamcorper lectus a diam elementum 
+      ultricies. Sed ultrices blandit lorem ut varius. Sed semper posuere 
+      lorem, eu bibendum arcu laoreet at. Duis vulputate fringilla massa at 
+      volutpat. Duis tempus viverra pharetra. Morbi gravida magna ut justo 
+      hendrerit, non fringilla nisi tempor. Cras quis tellus velit. 
+      Pellentesque eu velit sed nibh gravida commodo ut ut dui.</p>
+
+      <p>Donec eros diam, sollicitudin sed massa in, consequat consequat odio. 
+      Duis a velit vel elit porttitor varius. Etiam consequat velit libero, ut 
+      cursus enim tristique eu. Vestibulum congue mattis ultrices. Aliquam 
+      lacinia lobortis felis eu rhoncus. Vivamus id arcu neque. Nam eu urna 
+      nulla. Aliquam erat volutpat.</p>
+
+      <p>Quisque consequat gravida erat et vehicula. Nulla rhoncus viverra nisl
+      vel vulputate. Pellentesque imperdiet orci a nulla euismod, a fermentum 
+      turpis imperdiet. Praesent eleifend condimentum elit a congue. Morbi 
+      porta ullamcorper mi quis maximus. Proin feugiat ligula eget nunc 
+      placerat consequat. Donec dui ex, posuere eget neque eget, pulvinar 
+      rutrum purus. Praesent et leo nunc. Nulla vitae ligula vitae nisi 
+      ullamcorper vehicula vel at enim. Nullam pretium feugiat sodales. Aliquam
+      tempor arcu ac consequat feugiat.</p>
+    </div>
+  
+    <div class="relations">
+      <h2>Bonds</h2>
+      <p>This section is first for some details on how the character relates to
+      others and a general overview of their bonds, followed by some specific
+      details on certain important relationships. </p>
+      
+      <div class="relation">
+        <span>Character Name</span>
+        <p>Duis quis convallis orci. Duis volutpat eu mi nec accumsan. Morbi 
+        suscipit sapien est, tempor egestas purus iaculis id. Maecenas tempus 
+        convallis mattis. Fusce et augue efficitur, molestie lectus non, aliquet
+        sem. Aenean nec mi eget velit ornare fermentum et quis ex. Morbi
+        consequat velit elit, nec dapibus lectus tincidunt eget.</p>
+      </div>
+      
+      <div class="relation">
+        <span>Character Name</span>
+        <p>Duis quis convallis orci. Duis volutpat eu mi nec accumsan. Morbi 
+        suscipit sapien est, tempor egestas purus iaculis id. Maecenas tempus 
+        convallis mattis. Fusce et augue efficitur, molestie lectus non, aliquet
+        sem. Aenean nec mi eget velit ornare fermentum et quis ex. Morbi
+        consequat velit elit, nec dapibus lectus tincidunt eget.</p>
+      </div>
+      
+    </div>
+  </div>
+</block> </block>
+    
+    </li>
+    
+<!---------------------------------------------------------- STATISTICS TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3" role="tab" aria-selected="false" aria-controls="panel3" 
+        tabindex="0" title="Statistics"> 
+        <i class="fa fa-bar-chart" aria-hidden="true"></i> </label>
+      <div id="tab-content3" class="tab-content" role="tabpanel" 
+        aria-labelledby="Statistic" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="statistics"><block id="statistics">
+  <h1> Statistics </h1>
+</block> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------- SPELLBOOK TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab4" />
+      <label for="tab4" role="tab" aria-selected="false" aria-controls="panel4" 
+        tabindex="0" title="Spellbook"> 
+        <i class="fa fa-book" aria-hidden="true"></i> </label>
+      <div id="tab-content4" class="tab-content" role="tabpanel" 
+        aria-labelledby="Spellbook" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="spellbook"><block id="spellbook">
+  <h1> Spellbook </h1>
+</block> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------- INVENTORY TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab5">
+      <label for="tab5" role="tab" aria-selected="false" aria-controls="panel5" 
+        tabindex="0" title="Inventory"> 
+        <i class="fa fa-briefcase" aria-hidden="true"></i> </label>
+      <div id="tab-content5" class="tab-content" role="tabpanel" 
+        aria-labelledby="Inventory" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="inventory" style="padding: 0;"><block id="inventory">
+  <h1> Inventory </h1>
+    
+    <div class="equip" id="equip"> Equipment </div>
+    <div class="equipment" id="equipment"> 
+      <img src="img/shae-equip.png" />
+      
+      <div class="headgear">
+        < Equipped Headgear >
+      </div>
+      
+      <div class="facegear">
+        < Equipped Facegear >
+      </div>
+      
+      <div class="neckgear">
+        < Equipped Neckgear >
+      </div>
+      
+      <div class="shoulders">
+        < Equipped Pauldrons >
+      </div>
+      
+      <div class="body">
+        < Equipped Bodyarmor >
+      </div>
+      
+      <div class="torso">
+        < Equipped Torso >
+      </div>
+      
+      <div class="hands">
+        < Equipped Handgear >
+      </div>
+      
+      <div class="arms">
+        < Equipped Armgear >
+      </div>
+      
+      <div class="waist">
+        < Equipped Waistgear >
+      </div>
+      
+      <div class="pants">
+        < Equipped Pants >
+      </div>
+      
+      <div class="feet">
+        < Equipped Shoes >
+      </div>
+      
+      <div class="ring">
+        < Equipped Ring > <br>
+        < Equipped Ring >
+      </div> 
+      
+    </div>
+    
+    <div class="inv" id="equip"> Inventory </div>
+    
+    <div class="filters">
+        <div class="button-group" data-filter-group="type">
+          <h3>Filters</h3><br>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".melee-weapon"> <i class="flaticon-war" title="Melee Weaponry"></i></button>
+          <button class="button" data-filter=".ranged-weapon"> <i class="flaticon-comic" title="Ranged Weaponry"></i></button>
+          <button class="button" data-filter=".armor"> <i class="flaticon-armor" title="Armor"></i></button>
+          <button class="button" data-filter=".trinkets"><i class="flaticon-fashion" title="Trinkets"></i></button>
+          <button class="button" data-filter=".survival-gear"> <i class="flaticon-games" title="Survival Gear"></i></button>
+          <button class="button" data-filter=".misc"> <i class="flaticon-money" title="Miscellaneous"></i></button>
+        </div>
+
+        <div id="sorts" class="button-group">
+          <h3>Sorting</h3>
+          <button class="button is-checked" data-sort-by="original-order">ALL</button> |
+          <button class="button" data-sort-by="name">Name</button>
+          <button class="button" data-sort-by="count">Count</button>
+          <button class="button" data-sort-by="weight">Weight</button>
+          <button class="button" data-sort-by="type">Type</button>
+        </div>
+      </div>
+    
+    <div class="inventory" id="inventory">
+        <div class="item"> 
+        <b class="item-name">THING</b>
+        <i class="item-number">x #</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item"> 
+        <b class="item-name">THING</b>
+        <i class="item-number">x #</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item"> 
+        <b class="item-name">THING</b>
+        <i class="item-number">x #</i><span>
+          <a class="item-weight" title="Further Details"> # lbs </a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+    </div>
+</block> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------------- CLOSING ---> 
+
+  <br style="clear: both;" />
+  
+  <div class="diag"> </div>
+  
+  <div class="linkback"> <a href="../../index.html">Back</a> </div>
+</body>
+<footer>
+  <script>
+
+      var imports = document.getElementById('dialogues');
+      var profiles = imports.import.querySelector('#diag');
+      var header = document.querySelector('.diag');
+      header.appendChild(profiles.cloneNode(true));
+      
+      $( "#fjellfolk-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#fjellfolk-open" ).click(function() {
+      $( "#fjellfolk-dial" ).dialog( "open" );
+    });
+    
+    $( "#hito-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#hito-open" ).click(function() {
+      $( "#hito-dial" ).dialog( "open" );
+    });
+    
+    $( "#fjelltal-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#fjelltal-open" ).click(function() {
+      $( "#fjelltal-dial" ).dialog( "open" );
+    });
+    
+    $( "#fegard-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#fegard-open" ).click(function() {
+      $( "#fegard-dial" ).dialog( "open" );
+    });
+    
+    $( "#kaldrfjoll-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#kaldrfjoll-open" ).click(function() {
+      $( "#kaldrfjoll-dial" ).dialog( "open" );
+    });
+  </script>
+</footer>
+</html>
