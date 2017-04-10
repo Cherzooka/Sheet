@@ -31,6 +31,10 @@
     background: $background;
 }
 
+s {
+  text-decoration-color: $accent;
+}
+
 .ui-widget-content {
   border: none;
   border-top: 2px solid $accent;
@@ -50,7 +54,7 @@
     border: 0;
     background: transparent;
     color: $accent;
-    font-family: 'Wire One', sans-serif;
+    font-family: 'Amatica SC', cursive;
     font-size: 40px;
     padding: .1em 1em;
   }
@@ -124,7 +128,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Wire One', sans-serif;
+  font-family: 'Amatica SC', cursive;
   font-size: 50px;
   cursor: default;
   -webkit-margin-before: 0;
@@ -297,6 +301,42 @@ table {
   width: 100px;
 }
 
+#hpexp {
+    padding: 20px;
+    margin: 0px 100px;
+    cursor: default;
+    position: relative;
+    margin-left: 300px;
+    top: 385px;
+    @include user-select(none)
+    #hp {
+      font-family: 'Wire One', sans-serif;
+      font-size: 35px;
+      display: inline-block;
+      position: absolute;
+      top: 11px;
+      right: 75px;
+    }
+    .hpbar {
+      position: relative;
+      height: 15px;
+      margin: 0px 20px;
+      background-color: $font;
+      border: 2px solid $font;
+      border-radius: 50px;
+      opacity: 0.7;
+    }
+    .hpbarinner {
+      position: absolute;
+      height: 15px;
+      background-color: darkred;
+      background-image: url("https://dl.dropboxusercontent.com/s/e6g1iuwl5kywcaj/black-twill%20%281%29.png");
+      border-radius: 50px;
+    }
+}
+
+
+
 .bio-info {
   width: 300px;
   float: right;
@@ -313,9 +353,7 @@ table {
     color: $font;
     padding: 0;
     font-size: 15px;
-    text-decoration: underline;
-    text-decoration-color: $accent;
-    text-decoration-skip: ink;
+    border-bottom: 2px solid $accent;
     cursor: help;
   }
   span {
@@ -325,10 +363,10 @@ table {
   }
   b {
     color: $accent;
-    font-family: 'Wire One', sans-serif;
+    font-family: 'Amatica SC', cursive;
     font-size: 25px;
     letter-spacing: 2px;
-    margin-right: 207px;
+    display: block;
     position: relative;
     left: -20px;
   }
@@ -340,7 +378,20 @@ table {
   h2 {
     color: $accent;
     padding-left: 25px;
+    font-weight: 500;
     border-bottom: 2px solid $font;
+  }
+  ul {
+    li {
+      float: none;
+      display: block;
+      &::before {
+        content: "●";
+        display: inline-block;
+        color: $accent;
+        margin-right: 10px;
+      }
+    }
   }
   p {
     padding: 0 10px;
@@ -353,8 +404,19 @@ table {
     margin-bottom: 20px;
     span {
       color: $accent;
-      font-family: 'Wire One', sans-serif;
-      font-size: 40px;
+      font-family: 'Amatica SC', cursive;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    b {
+      display: block;
+      margin-left: 40px;
+      font-weight: normal;
+      opacity: 0.5;
+      &::before {
+        content: "—";
+        display: inline-block;
+      }
     }
     p {
       text-align: justify;
@@ -366,7 +428,7 @@ table {
 }
 
 #equip {
-  font-family: 'Wire One', sans-serif;
+  font-family: 'Amatica SC', cursive;
   font-size: 40px;
   text-align: right;
   text-decoration: underline;
@@ -377,7 +439,7 @@ table {
     display: block;
     content: "";
     border-bottom: 4px solid $accent;
-    top: 42px;
+    top: 54px;
     position: relative;
   }
   &::after {
@@ -386,15 +448,15 @@ table {
     border-bottom: 4px solid $accent;
     width: 96px;
     position: relative;
-    top: -6px;
-    left: 798px;
+    top: -9px;
+    left: 800px;
   }
 }
 
 .equip {
   cursor: pointer;
   &::before {
-    width: 703px;
+    width: 663px;
   }
 }
 
@@ -853,7 +915,10 @@ table {
   color: $accent;
   border-radius: 15px;
   margin-top: 10px;
+  position: sticky;
+  top: 10px;
   height: 100px;
+  z-index: 999;
   padding: 10px;
   .button-group {
     display: inline-block;
@@ -863,14 +928,47 @@ table {
     float: right;
   }
   h3 {
-    font-family: 'Wire One', sans-serif;
+    font-family: 'Amatica SC', cursive;
     display: inline-block;
     font-size: 25px;
+  }
+  #filters {
+    width: 40%;
+    float: left;
+    h3 {
+      float: right;
+      border-left: 2px solid $accent;
+      padding-left: 20px;
+      height: 100px;
+    }
+    #reset {
+      float: right;
+      position: relative;
+      top: 55px;
+      left: 55px;
+    }
+  }
+  #sorts {
+    width: 40%;
+    float: right;
+    h3 {
+      float: left;
+      border-right: 2px solid $accent;
+      padding-right: 20px;
+      height: 100px;
+    }
+    #reset {
+      float: left;
+      position: relative;
+      top: 55px;
+      right: 55px;
+    }
   }
   .button {
     background: transparent;
     border: 0;
     outline: 0;
+    margin-top: 5px;
     color: $background;
     @include transition(all 0.5s linear);
     i {
@@ -925,8 +1023,22 @@ table {
   float: left;
   border-top: 2px solid $accent;
   border-bottom: 2px solid $accent;
+  .item-weight {
+    &::after {
+      content: 'lb.';
+      display: inline-block;
+      margin-left: 3px;
+    }
+  }
+  .item-value {
+    &::after {
+      content: 'gp';
+      display: inline-block;
+      margin-left: 3px;
+    }
+  }
   b {
-    font-family: 'Wire One', sans-serif;
+    font-family: 'Amatica SC', cursive;
     font-size: 35px;
   }
   i {
@@ -935,6 +1047,13 @@ table {
     border: 5px solid $accent;
     float: right;
     @include user-select(none);
+    &::before {
+      content: 'x';
+      display: inline-block;
+      margin-right: 2px;
+      position: relative;
+      bottom: 1px;
+    }
   }
   p {
     text-align: justify;
@@ -953,6 +1072,9 @@ table {
       font-size: 14px;
       margin: 3px 5px;
       display: inline-block;
+    }
+    a[title] {
+      cursor: help;
     }
   }
 }

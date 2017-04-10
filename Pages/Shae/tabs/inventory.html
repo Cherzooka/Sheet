@@ -59,9 +59,9 @@
     <div class="inv" id="equip"> Inventory </div>
     
     <div class="filters">
-        <div class="button-group" data-filter-group="type">
-          <h3>Filters</h3><br>
-          <button class="button is-checked" data-filter="">ALL</button> |
+        <div id="filters" class="button-group" data-filter-group="type">
+          <h3>Filters</h3>
+          <button id="reset" class="button is-checked" data-filter="">ALL</button>
           <button class="button" data-filter=".melee-weapon"> <i class="flaticon-war" title="Melee Weaponry"></i></button>
           <button class="button" data-filter=".ranged-weapon"> <i class="flaticon-comic" title="Ranged Weaponry"></i></button>
           <button class="button" data-filter=".armor"> <i class="flaticon-armor" title="Armor"></i></button>
@@ -70,21 +70,25 @@
           <button class="button" data-filter=".misc"> <i class="flaticon-money" title="Miscellaneous"></i></button>
         </div>
 
-        <div class="sort-by-button-group">
+        <div id="sorts" class="button-group">
           <h3>Sorting</h3>
-          <button class="button is-checked" data-sort-by="original-order">ALL</button> |
-          <button class="button" data-sort-by="name">Name</button>
-          <button class="button" data-sort-by="count">Count</button>
-          <button class="button" data-sort-by="weight">Weight</button>
-          <button class="button" data-sort-by="type">Type</button>
+          <button id="reset" class="button is-checked" data-sort-by="original-order">ALL</button>
+          <button class="button" data-sort-by="name" data-sort-direction="asc"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="name" data-sort-direction="desc"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="count" data-sort-direction="asc"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="count" data-sort-direction="desc"><i class="fa fa-sort-amount-desc" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="weight" data-sort-direction="asc">Weight</button>
+          <button class="button" data-sort-by="weight" data-sort-direction="desc">Weight</button>
+          <button class="button" data-sort-by="value" data-sort-direction="asc">Value</button>
+          <button class="button" data-sort-by="value" data-sort-direction="desc">Value</button>
         </div>
       </div>
       
     <!---
       <div class="item"> 
         <b class="item-name">THING</b>
-        <i class="item-number">x #</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
+        <i class="item-number">#</i><span>
+          <a class="item-weight" title="Further Details">#</a>
           <a class="item-value" title="Further Details"> # gp </a>
           <a class="item-type" title-"Further Details"> # </a>
           <a title="Further Details">[tag]</a>
@@ -101,9 +105,9 @@
       
       <div class="item melee-weapon"> 
         <b class="item-name">Battleaxe</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> 4 lbs </a>
-          <a class="item-value"> 10 gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">10</a>
           <a class="item-type"> Melee Weaponry </a>
           <a> Slashing (1d8) </a>
           <a title="This weapon can be used with one or two hands. A damage 
@@ -117,9 +121,9 @@
       
       <div class="item armor"> 
         <b class="item-name">Breastplate</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> 20 lbs </a>
-          <a class="item-value"> 400 gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">20</a>
+          <a class="item-value">400</a>
           <a class="item-type"> Armor </a>
           <a> +4 AC + Dex (Max 2) </a>
         </span><p> This armor consists of a fitted metal chest piece worn with 
@@ -130,9 +134,9 @@
       
       <div class="item melee-weapon ranged-weapon"> 
         <b class="item-name">Handaxe</b>
-        <i class="item-number">x 2</i><span>
-          <a class="item-weight" title="2 lbs / each"> 4 lbs </a>
-          <a class="item-value" title="5 gp / each"> 10 gp </a>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="2 lbs / each">4</a>
+          <a class="item-value" title="5 gp / each">10</a>
           <a class="item-type"> Melee Weaponry </a>
           <a class="item-type"> Ranged Weaponry </a>
           <a> Slashing (1d6) </a>
@@ -147,10 +151,10 @@
       
       <div class="item ranged-weapon"> 
         <b class="item-name">Shortbow</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> 2 lbs </a>
-          <a class="item-value"> 25 gp </a>
-          <a title="item-type">Ranged Weaponry</a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">2</a>
+          <a class="item-value">25</a>
+          <a class="item-type">Ranged Weaponry</a>
           <a>Piercing (1d6)</a>
           <a>Range (80/320)</a>
           <a>Two Handed</a>
@@ -160,9 +164,9 @@
       
       <div class="item trinket"> 
         <b class="item-name">Viol</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> 1 lbs </a>
-          <a class="item-value"> 30 gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">30</a>
           <a title="Item-type">Trinket</a>
           <a> Musical Instrument </a>
         </span><p> An intricately decorated and well worn viol made of maple. 
@@ -171,9 +175,9 @@
       
       <div class="item trinket"> 
         <b class="item-name">Wooden Ring</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
-          <a class="item-value" title="Further Details"> # gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">0</a>
+          <a class="item-value">#</a>
           <a class="item-type"> Trinket </a>
           <a title="Further Details">[tag]</a>
         </span><p> A simple wooden ring made of yew, adorned with fjelltal 
@@ -182,9 +186,9 @@
       
       <div class="item armor"> 
         <b class="item-name">Costume</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> 4 lbs </a>
-          <a class="item-value"> 5 gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">5</a>
           <a class="item-type"> Armor </a>
           <a>0 AC + Dex </a>
         </span><p> A colorful collection of clothing to be used in performance 
@@ -193,9 +197,9 @@
       
       <div class="item melee-weapon ranged-weapon"> 
         <b class="item-name">Dagger</b>
-        <i class="item-number">x 3</i><span>
-          <a class="item-weight" title="1 lb / each"> 3 lbs </a>
-          <a class="item-value" title="2 gp / each"> 6 gp </a>
+        <i class="item-number">3</i><span>
+          <a class="item-weight" title="1 lb / each">3</a>
+          <a class="item-value" title="2 gp / each">6</a>
           <a class="item-type"> Melee Weaponry </a>
           <a class="item-type"> Ranged Weaponry </a>
           <a> Piercing (1d4) </a>
@@ -208,9 +212,9 @@
       
       <div class="item ranged-weapon"> 
         <b class="item-name">Arrows (20x) </b>
-        <i class="item-number">x 2</i><span>
-          <a class="item-weight" title="1 lb / each"> 2 lbs </a>
-          <a class="item-value" title="1 gp / each"> 2 gp </a>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="1 lb / each">2</a>
+          <a class="item-value" title="1 gp / each">2</a>
           <a class="item-type"> Ranged Weaponry </a>
           <a>Ammunition</a>
         </span><p> Iron tipped maple arrows, finished with chicken feathers. </p> 
@@ -218,9 +222,9 @@
       
       <div class="item misc"> 
         <b class="item-name">Chest</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
-          <a class="item-value" title="Further Details"> # gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight" title="Further Details">0</a>
+          <a class="item-value" title="Further Details">#</a>
           <a class="item-type" title-"Further Details"> Miscellaneous </a>
           <a>Container</a>
         </span><p> A simple wooden chest decorated with Fjelltal runes. 
@@ -229,9 +233,9 @@
       
       <div class="item misc"> 
         <b class="item-name">Map Case</b>
-        <i class="item-number">x 2</i><span>
-          <a class="item-weight" title="1 lb / each"> 2 lbs </a>
-          <a class="item-value" title="1 gp / each"> 2 gp </a>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="1 lb / each">2</a>
+          <a class="item-value" title="1 gp / each">2</a>
           <a class="item-type" title-"Further Details"> Miscellaneous </a>
           <a>Container</a>
         </span><p> This cylindrical leather case can hold up to ten rolled-up 
@@ -240,9 +244,9 @@
       
       <div class="item misc"> 
         <b class="item-name">Ink Bottle</b>
-        <i class="item-number">x 1</i><span>
-          <a class="item-weight"> - lbs </a>
-          <a class="item-value"> 10 gp </a>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">0</a>
+          <a class="item-value">10</a>
           <a class="item-type"> Miscellaneous </a>
         </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
         lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
