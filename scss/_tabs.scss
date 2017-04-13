@@ -76,8 +76,10 @@
   [id^="tab"]:checked + label { 
     border-right: 5px solid $accent;
     width: 45px;
+    @include transition(linear .5s);
   }
   [id^="tab"]:checked ~ [id^="tab-content"] {
     display: block;
+    @include transition(linear .5s);
   }
 }

@@ -58,10 +58,10 @@
     
     <div class="inv" id="equip"> Inventory </div>
     
-    <div class="filters">
+    <div class="filters-containter"><div class="filters">
         <div id="filters" class="button-group" data-filter-group="type">
           <h3>Filters</h3>
-          <button id="reset" class="button is-checked" data-filter="">ALL</button>
+          <button id="reset" class="button is-checked" data-filter="">reset</button>
           <button class="button" data-filter=".melee-weapon"> <i class="flaticon-war" title="Melee Weaponry"></i></button>
           <button class="button" data-filter=".ranged-weapon"> <i class="flaticon-comic" title="Ranged Weaponry"></i></button>
           <button class="button" data-filter=".armor"> <i class="flaticon-armor" title="Armor"></i></button>
@@ -72,17 +72,15 @@
 
         <div id="sorts" class="button-group">
           <h3>Sorting</h3>
-          <button id="reset" class="button is-checked" data-sort-by="original-order">ALL</button>
-          <button class="button" data-sort-by="name" data-sort-direction="asc"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="name" data-sort-direction="desc"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="count" data-sort-direction="asc"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="count" data-sort-direction="desc"><i class="fa fa-sort-amount-desc" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="weight" data-sort-direction="asc">Weight</button>
-          <button class="button" data-sort-by="weight" data-sort-direction="desc">Weight</button>
-          <button class="button" data-sort-by="value" data-sort-direction="asc">Value</button>
-          <button class="button" data-sort-by="value" data-sort-direction="desc">Value</button>
+          <button id="reset" class="button is-checked" data-sort-by="original-order">reset</button>
+          <button class="button" data-sort-by="name" data-sort-direction="asc"><i class="flaticon-sort-by-alphabet" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="value" data-sort-direction="asc"><i class="flaticon-sort-by-numeric-order" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="count" data-sort-direction="asc"><i class="flaticon-sort-by-attributes-interface-button-option" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="name" data-sort-direction="desc"><i class="flaticon-sort-reverse-alphabetical-order" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="value" data-sort-direction="desc"><i class="flaticon-sort-by-order" aria-hidden="true"></i></button>
+          <button class="button" data-sort-by="count" data-sort-direction="desc"><i class="flaticon-sort-by-attributes" aria-hidden="true"></i></button>
         </div>
-      </div>
+      </div></div>
       
     <!---
       <div class="item"> 
@@ -103,6 +101,13 @@
     
     <div class="inventory" id="inventory">
       
+<!--- CARRIED CONTAINER --->    
+  
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Carried</b>
+        </div>
+        
       <div class="item melee-weapon"> 
         <b class="item-name">Battleaxe</b>
         <i class="item-number">1</i><span>
@@ -163,17 +168,6 @@
       </div>
       
       <div class="item trinket"> 
-        <b class="item-name">Viol</b>
-        <i class="item-number">1</i><span>
-          <a class="item-weight">1</a>
-          <a class="item-value">30</a>
-          <a title="Item-type">Trinket</a>
-          <a> Musical Instrument </a>
-        </span><p> An intricately decorated and well worn viol made of maple. 
-        It appears to be well used, but remarkably well maintained. </p> 
-      </div>
-      
-      <div class="item trinket"> 
         <b class="item-name">Wooden Ring</b>
         <i class="item-number">1</i><span>
           <a class="item-weight">0</a>
@@ -182,17 +176,6 @@
           <a title="Further Details">[tag]</a>
         </span><p> A simple wooden ring made of yew, adorned with fjelltal 
         runes. </p> 
-      </div>
-      
-      <div class="item armor"> 
-        <b class="item-name">Costume</b>
-        <i class="item-number">1</i><span>
-          <a class="item-weight">4</a>
-          <a class="item-value">5</a>
-          <a class="item-type"> Armor </a>
-          <a>0 AC + Dex </a>
-        </span><p> A colorful collection of clothing to be used in performance 
-        arts, or simply regular clothing for the more flamboyant. </p> 
       </div>
       
       <div class="item melee-weapon ranged-weapon"> 
@@ -210,6 +193,67 @@
         knife throwing, to letter opening. </p> 
       </div>
       
+      <div class="item armor"> 
+        <b class="item-name">Costume</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">5</a>
+          <a class="item-type"> Armor </a>
+          <a>0 AC + Dex </a>
+        </span><p> A colorful collection of clothing to be used in performance 
+        arts, or simply regular clothing for the more flamboyant. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Lamp</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type"> Survival Gear </a>
+        </span><p> A lamp casts bright light in a 15-foot radius and dim light 
+        for an additional 30 feet. Once lit, it burns for 6 hours on one flask
+        of oil. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Waterskin</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Potion of Healing</b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title=".5 lb / each">1</a>
+          <a class="item-value" title="50 gp / each">100</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+    
+<!--- QUIVER CONTAINER -->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Quiver</b>
+          <i class="item-number">1</i>
+          <p>.</p>
+        </div>
+        
       <div class="item ranged-weapon"> 
         <b class="item-name">Arrows (20x) </b>
         <i class="item-number">2</i><span>
@@ -219,29 +263,20 @@
           <a>Ammunition</a>
         </span><p> Iron tipped maple arrows, finished with chicken feathers. </p> 
       </div>
+        
+    </div>
+
+    
+<!--- CHEST CONTAINER --->
       
-      <div class="item misc"> 
-        <b class="item-name">Chest</b>
-        <i class="item-number">1</i><span>
-          <a class="item-weight" title="Further Details">0</a>
-          <a class="item-value" title="Further Details">#</a>
-          <a class="item-type" title-"Further Details"> Miscellaneous </a>
-          <a>Container</a>
-        </span><p> A simple wooden chest decorated with Fjelltal runes. 
-        Holds 300 lbs of gear. </p> 
-      </div>
-      
-      <div class="item misc"> 
-        <b class="item-name">Map Case</b>
-        <i class="item-number">2</i><span>
-          <a class="item-weight" title="1 lb / each">2</a>
-          <a class="item-value" title="1 gp / each">2</a>
-          <a class="item-type" title-"Further Details"> Miscellaneous </a>
-          <a>Container</a>
-        </span><p> This cylindrical leather case can hold up to ten rolled-up 
-        sheets of paper, or five rolled-up sheets of parchment.</p> 
-      </div>
-      
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Chest</b>
+          <i class="item-number">1</i>
+          <p>A simple wooden chest decorated with Fjelltal runes. 
+            Holds 300 lbs of gear.</p>
+        </div>
+        
       <div class="item misc"> 
         <b class="item-name">Ink Bottle</b>
         <i class="item-number">1</i><span>
@@ -256,5 +291,343 @@
         faucibus orci in lacinia. </p> 
       </div>
       
+      <div class="item trinket"> 
+        <b class="item-name">Viol</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">30</a>
+          <a title="Item-type">Trinket</a>
+          <a> Musical Instrument </a>
+        </span><p> An intricately decorated and well worn viol made of maple. 
+        It appears to be well used, but remarkably well maintained. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Ink Pen</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">2</a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Flask of oil</b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="1 lb. / each">2</a>
+          <a class="item-value" title="1 gp / each">2</a>
+          <a class="item-type"> Survival Gear </a>
+        </span><p> Oil usually comes in a clay flask that holds 1 pint. As an 
+        action, you can splash the oil in this flask onto a creature within 5 
+        feet of you or throw it up to 20 feet, shattering it on impact. Make a 
+        ranged attack against a target creature or object, treating the oil as 
+        an improvised weapon. On a hit, the target is covered in oil. If the 
+        target takes any fire damage before the oil dries (after 1 minute), the
+        target takes an additional 5 fire damage from the burning oil. You can
+        also pour a flask of oil on the ground to cover a 5-foot-square area, 
+        provided that the surface is level. If lit, the oil burns for 2 rounds 
+        and deals 5 fire damage to any creature that enters the area or ends 
+        its turn in the area. A creature can take this damage once per turn. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Vial of Perfume</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p>
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Sealing Wax</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Soap</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Dice Set</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">1</a>
+          <a class="item-type">Miscellaneous</a>
+          <a>Gaming Set</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Playing Cards</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+          <a>Gaming Set</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Calligraphers Supplies</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">10</a>
+          <a class="item-type">Miscellaneous</a>
+          <a>Artisan's Tools</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Crowbar</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Grappling Hook</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Tinderbox</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Tent, Two Person</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">20</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Whetstone</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">1</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Mess Kit</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Rations (1 day)</b>
+        <i class="item-number">#</i><span>
+          <a class="item-weight" title="2 lb / each">10</a>
+          <a class="item-value" title="5 gp / each">25</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Steel Mirror</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+    
+<!--- MAP CASE CONTAINER --->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Map Case</b>
+          <i class="item-number">2</i>
+          <p>This cylindrical leather case can hold up to ten rolled-up 
+          sheets of paper, or five rolled-up sheets of parchment.</p>
+        </div>
+        
+        <div class="item misc"> 
+        <b class="item-name">Sheet of Paper</b>
+        <i class="item-number">5</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value" title="2 gp / each">10</a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+    
+<!--- HORSE CONTAINER --->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Draft Horse</b>
+          <i class="item-number">1</i>
+          <p>540 lb carry weight, 40 ft speed</p>
+        </div>
+        
+        <div class="item misc"> 
+        <b class="item-name">Bit and Bridle</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Horse Feed</b>
+        <i class="item-number">5</i><span>
+          <a class="item-weight" title="10 lb / each">50</a>
+          <a class="item-value" title="5 gp / each">25</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Ridding Saddle</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">25</a>
+          <a class="item-value">10</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Saddlebags</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">8</a>
+          <a class="item-value">4</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+
     </div>
 </block>

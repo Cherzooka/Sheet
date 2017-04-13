@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 29/03/2017 03:07
+    Creation date: 12/04/2017 23:06
     */
 
     @font-face {
@@ -36,26 +36,40 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-coins:before { content: "\f100"; }
-.flaticon-weight:before { content: "\f101"; }
-.flaticon-armor:before { content: "\f102"; }
-.flaticon-helmet:before { content: "\f103"; }
-.flaticon-games:before { content: "\f104"; }
-.flaticon-money:before { content: "\f105"; }
-.flaticon-fashion:before { content: "\f106"; }
-.flaticon-protection:before { content: "\f107"; }
-.flaticon-comic:before { content: "\f108"; }
-.flaticon-war:before { content: "\f109"; }
-.flaticon-knife:before { content: "\f10a"; }
+    .flaticon-sort-by-attributes:before { content: "\f100"; }
+.flaticon-sort-by-alphabet:before { content: "\f101"; }
+.flaticon-sort-by-attributes-interface-button-option:before { content: "\f102"; }
+.flaticon-sort-reverse-alphabetical-order:before { content: "\f103"; }
+.flaticon-sort-by-order:before { content: "\f104"; }
+.flaticon-sort-by-numeric-order:before { content: "\f105"; }
+.flaticon-symbols:before { content: "\f106"; }
+.flaticon-coins:before { content: "\f107"; }
+.flaticon-weight:before { content: "\f108"; }
+.flaticon-armor:before { content: "\f109"; }
+.flaticon-helmet:before { content: "\f10a"; }
+.flaticon-games:before { content: "\f10b"; }
+.flaticon-money:before { content: "\f10c"; }
+.flaticon-fashion:before { content: "\f10d"; }
+.flaticon-protection:before { content: "\f10e"; }
+.flaticon-comic:before { content: "\f10f"; }
+.flaticon-war:before { content: "\f110"; }
+.flaticon-knife:before { content: "\f111"; }
     
-    $font-Flaticon-coins: "\f100";
-    $font-Flaticon-weight: "\f101";
-    $font-Flaticon-armor: "\f102";
-    $font-Flaticon-helmet: "\f103";
-    $font-Flaticon-games: "\f104";
-    $font-Flaticon-money: "\f105";
-    $font-Flaticon-fashion: "\f106";
-    $font-Flaticon-protection: "\f107";
-    $font-Flaticon-comic: "\f108";
-    $font-Flaticon-war: "\f109";
-    $font-Flaticon-knife: "\f10a";
+    $font-Flaticon-sort-by-attributes: "\f100";
+    $font-Flaticon-sort-by-alphabet: "\f101";
+    $font-Flaticon-sort-by-attributes-interface-button-option: "\f102";
+    $font-Flaticon-sort-reverse-alphabetical-order: "\f103";
+    $font-Flaticon-sort-by-order: "\f104";
+    $font-Flaticon-sort-by-numeric-order: "\f105";
+    $font-Flaticon-symbols: "\f106";
+    $font-Flaticon-coins: "\f107";
+    $font-Flaticon-weight: "\f108";
+    $font-Flaticon-armor: "\f109";
+    $font-Flaticon-helmet: "\f10a";
+    $font-Flaticon-games: "\f10b";
+    $font-Flaticon-money: "\f10c";
+    $font-Flaticon-fashion: "\f10d";
+    $font-Flaticon-protection: "\f10e";
+    $font-Flaticon-comic: "\f10f";
+    $font-Flaticon-war: "\f110";
+    $font-Flaticon-knife: "\f111";

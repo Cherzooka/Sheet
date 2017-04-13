@@ -9,12 +9,13 @@
          tip_fade_speed: 600,
          attribute: "title"
        });
-
+       
        // init Isotope
-       var $grid = $('div#inventory').imagesLoaded(function() {
+       var $grid = $('.item-container').imagesLoaded(function() {
          $grid.isotope({
            itemSelector: '.item',
            layoutMode: 'masonry',
+           stamp: '.stamp',
            percentPosition: true,
            masonry: {
              columnWidth: '.item'

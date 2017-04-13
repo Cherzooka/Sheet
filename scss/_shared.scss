@@ -144,7 +144,7 @@ h3 {
 }
 
 .basic-info {
-  width: 400px;
+  width: 475px;
   float: right;
   text-align: right;
   b {
@@ -175,6 +175,8 @@ h3 {
   border: 2px solid $accent;
   border-radius: 25px;
   text-align: center;
+  cursor: default;
+  @include user-select(none);
   span {
     font-size: 60px;
     font-family: 'Nova Mono', monospace;
@@ -249,10 +251,9 @@ h3 {
   width: 120px;
   height: 120px;
   transform: rotate(45deg);
+  float: left;
   position: relative;
-  float: right;
-  top: 65px;
-  right: -30px;
+  right: -130px;
   h3 {
     transform: rotate(-45deg);
     cursor: default;
@@ -301,41 +302,74 @@ table {
   width: 100px;
 }
 
-#hpexp {
-    padding: 20px;
-    margin: 0px 100px;
+#hpcontainer {
     cursor: default;
-    position: relative;
-    margin-left: 300px;
-    top: 385px;
+    padding: 0 25px;
     @include user-select(none)
     #hp {
       font-family: 'Wire One', sans-serif;
       font-size: 35px;
       display: inline-block;
-      position: absolute;
-      top: 11px;
-      right: 75px;
+      position: relative;
+      bottom: 35px;
+      left: 40px;
     }
     .hpbar {
       position: relative;
-      height: 15px;
-      margin: 0px 20px;
+      height: 30px;
       background-color: $font;
-      border: 2px solid $font;
+      border: 2px solid $accent;
       border-radius: 50px;
       opacity: 0.7;
     }
     .hpbarinner {
       position: absolute;
-      height: 15px;
+      height: 30px;
       background-color: darkred;
       background-image: url("https://dl.dropboxusercontent.com/s/e6g1iuwl5kywcaj/black-twill%20%281%29.png");
       border-radius: 50px;
     }
 }
 
+#basicscontainer {
+  width: 500px;
+  float: right;
+  border-top: 2px solid $font;
+  padding-top: 25px;
+  margin-top: 25px;
+}
 
+.stattbox {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  float: right;
+}
+
+.statt {
+  border: 2px solid $accent;
+  height: 60px;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  b {
+    background: $accent;
+    display: inline-block;
+    position: relative;
+    top: 36px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Wire One', sans-serif;
+    font-size: 25px;
+  }
+  span {
+    font-family: 'Nova Mono', monospace;
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    top: -37px;
+  }
+}
 
 .bio-info {
   width: 300px;
@@ -374,7 +408,6 @@ table {
 
 .bio-container {
   width: 535px;
-  margin-top: 50px;
   h2 {
     color: $accent;
     padding-left: 25px;
@@ -910,15 +943,22 @@ table {
   }
 }
 
+.filters-containter {
+  background: $background;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding-top: 5px;
+  width: 100%;
+  z-index: 999999999;
+}
+
 .filters {
   background: $font;
   color: $accent;
   border-radius: 15px;
   margin-top: 10px;
-  position: sticky;
-  top: 10px;
   height: 100px;
-  z-index: 999;
   padding: 10px;
   .button-group {
     display: inline-block;
@@ -1002,9 +1042,8 @@ table {
 }
 
 .inventory {
-  padding: 20px 50px;
+  padding: 20px 30px;
   display: inline-block;
-  text-align: center;
   width: 900px;
   &::after {
     display: block;
@@ -1062,6 +1101,7 @@ table {
   span {
     text-align: center;
     display: block;
+    cursor: default;
     margin-bottom: 10px;
     @include user-select(none);
     a {
@@ -1072,9 +1112,40 @@ table {
       font-size: 14px;
       margin: 3px 5px;
       display: inline-block;
+      cursor: default;
+      @include user-select(none);
     }
     a[title] {
       cursor: help;
+    }
+  }
+}
+
+.item-container {
+  width: 800px;
+  padding: 10px 20px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  border-top: 2px solid $accent;
+  border-bottom: 2px solid $accent;
+  margin-bottom: 15px;
+  b {
+    font-family: 'Amatica SC', cursive;
+    font-size: 35px;
+  }
+  i {
+    background: $accent;
+    border-radius: 50%;
+    border: 5px solid $accent;
+    float: right;
+    @include user-select(none);
+    &::before {
+      content: 'x';
+      display: inline-block;
+      margin-right: 2px;
+      position: relative;
+      bottom: 1px;
     }
   }
 }

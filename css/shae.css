@@ -188,11 +188,19 @@
 .tabs [id^="tab"]:checked + label {
   border-right: 5px solid #993629;
   width: 45px;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
 }
 
-/* line 80, C:/Users/Cher/Documents/GitHub/Sheet/scss/_tabs.scss */
+/* line 81, C:/Users/Cher/Documents/GitHub/Sheet/scss/_tabs.scss */
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
 }
 
 /* line 1, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
@@ -359,7 +367,7 @@ h3 {
 
 /* line 146, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .basic-info {
-  width: 400px;
+  width: 475px;
   float: right;
   text-align: right;
 }
@@ -400,9 +408,14 @@ h3 {
   border: 2px solid #993629;
   border-radius: 25px;
   text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* line 178, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 180, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat span {
   font-size: 60px;
   font-family: 'Nova Mono', monospace;
@@ -413,7 +426,7 @@ h3 {
   bottom: 40px;
 }
 
-/* line 187, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 189, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat b {
   font-family: 'Wire One', sans-serif;
   font-size: 40px;
@@ -426,7 +439,7 @@ h3 {
   width: 50px;
 }
 
-/* line 198, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 200, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat i {
   font-family: 'Noto Sans', sans-serif;
   background: #dddddd;
@@ -442,7 +455,7 @@ h3 {
   display: inline-block;
 }
 
-/* line 212, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 214, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat .stat-skills {
   position: relative;
   width: 200px;
@@ -452,7 +465,7 @@ h3 {
   font-size: 15px;
 }
 
-/* line 219, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 221, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat .stat-skills i {
   border: none;
   font-family: FontAwesome;
@@ -470,7 +483,7 @@ h3 {
   position: initial;
 }
 
-/* line 235, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 237, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat .stat-skills span {
   font-size: 14px;
   font-family: 'Noto Sans', sans-serif;
@@ -478,24 +491,23 @@ h3 {
   margin-left: 20px;
 }
 
-/* line 240, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 242, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .stat .stat-skills span i {
   font-size: 16px;
   margin-bottom: -3px;
 }
 
-/* line 248, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 250, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .alignment {
   width: 120px;
   height: 120px;
   transform: rotate(45deg);
+  float: left;
   position: relative;
-  float: right;
-  top: 65px;
-  right: -30px;
+  right: -130px;
 }
 
-/* line 256, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 257, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .alignment h3 {
   transform: rotate(-45deg);
   cursor: default;
@@ -505,12 +517,12 @@ h3 {
   right: 50px;
 }
 
-/* line 266, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 267, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .turn {
   transform: rotate(-90deg);
 }
 
-/* line 270, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 271, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .alignment-label {
   z-index: 9999;
   position: relative;
@@ -523,7 +535,7 @@ h3 {
   user-select: none;
 }
 
-/* line 279, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 280, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 th, td {
   background: #dddddd;
   border: 5px solid #333333;
@@ -534,7 +546,7 @@ th, td {
   border-radius: 5px;
 }
 
-/* line 289, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 290, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 table .selected {
   background: #993629;
   cursor: help;
@@ -545,7 +557,7 @@ table .selected {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 296, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 297, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 table {
   border-collapse: collapse;
   pointer-events: none;
@@ -554,51 +566,93 @@ table {
   width: 100px;
 }
 
-/* line 304, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
-#hpexp {
-  padding: 20px;
-  margin: 0px 100px;
+/* line 305, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+#hpcontainer {
   cursor: default;
-  position: relative;
-  margin-left: 300px;
-  top: 385px;
+  padding: 0 25px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* line 312, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
-#hpexp #hp {
+/* line 309, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+#hpcontainer #hp {
   font-family: 'Wire One', sans-serif;
   font-size: 35px;
   display: inline-block;
-  position: absolute;
-  top: 11px;
-  right: 75px;
+  position: relative;
+  bottom: 35px;
+  left: 40px;
 }
 
-/* line 320, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
-#hpexp .hpbar {
+/* line 317, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+#hpcontainer .hpbar {
   position: relative;
-  height: 15px;
-  margin: 0px 20px;
+  height: 30px;
   background-color: #dddddd;
-  border: 2px solid #dddddd;
+  border: 2px solid #993629;
   border-radius: 50px;
   opacity: 0.7;
 }
 
-/* line 329, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
-#hpexp .hpbarinner {
+/* line 325, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+#hpcontainer .hpbarinner {
   position: absolute;
-  height: 15px;
+  height: 30px;
   background-color: darkred;
   background-image: url("https://dl.dropboxusercontent.com/s/e6g1iuwl5kywcaj/black-twill%20%281%29.png");
   border-radius: 50px;
 }
 
-/* line 340, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 334, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+#basicscontainer {
+  width: 500px;
+  float: right;
+  border-top: 2px solid #dddddd;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+/* line 342, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.stattbox {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  float: right;
+}
+
+/* line 349, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.statt {
+  border: 2px solid #993629;
+  height: 60px;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 355, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.statt b {
+  background: #993629;
+  display: inline-block;
+  position: relative;
+  top: 36px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  font-family: 'Wire One', sans-serif;
+  font-size: 25px;
+}
+
+/* line 365, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.statt span {
+  font-family: 'Nova Mono', monospace;
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  top: -37px;
+}
+
+/* line 374, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-info {
   width: 300px;
   float: right;
@@ -609,7 +663,7 @@ table {
   left: 633px;
 }
 
-/* line 348, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 382, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-info button {
   outline: 0;
   background: transparent;
@@ -622,14 +676,14 @@ table {
   cursor: help;
 }
 
-/* line 359, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 393, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-info span {
   display: block;
   font-size: 15px;
   margin-left: 15px;
 }
 
-/* line 364, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 398, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-info b {
   color: #993629;
   font-family: 'Amatica SC', cursive;
@@ -640,13 +694,12 @@ table {
   left: -20px;
 }
 
-/* line 375, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 409, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container {
   width: 535px;
-  margin-top: 50px;
 }
 
-/* line 378, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 411, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container h2 {
   color: #993629;
   padding-left: 25px;
@@ -654,13 +707,13 @@ table {
   border-bottom: 2px solid #dddddd;
 }
 
-/* line 385, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 418, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container ul li {
   float: none;
   display: block;
 }
 
-/* line 388, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 421, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container ul li::before {
   content: "●";
   display: inline-block;
@@ -668,12 +721,12 @@ table {
   margin-right: 10px;
 }
 
-/* line 396, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 429, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container p {
   padding: 0 10px;
 }
 
-/* line 399, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 432, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container .relation {
   border-top: 2px solid #993629;
   border-bottom: 2px solid #993629;
@@ -682,7 +735,7 @@ table {
   margin-bottom: 20px;
 }
 
-/* line 405, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 438, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container .relation span {
   color: #993629;
   font-family: 'Amatica SC', cursive;
@@ -690,7 +743,7 @@ table {
   font-weight: 900;
 }
 
-/* line 411, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 444, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container .relation b {
   display: block;
   margin-left: 40px;
@@ -698,13 +751,13 @@ table {
   opacity: 0.5;
 }
 
-/* line 416, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 449, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container .relation b::before {
   content: "—";
   display: inline-block;
 }
 
-/* line 421, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 454, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .bio-container .relation p {
   text-align: justify;
   font-size: 15px;
@@ -712,7 +765,7 @@ table {
   -webkit-margin-after: 0;
 }
 
-/* line 430, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 463, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 #equip {
   font-family: 'Amatica SC', cursive;
   font-size: 40px;
@@ -723,7 +776,7 @@ table {
   padding-right: 100px;
 }
 
-/* line 438, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 471, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 #equip::before {
   display: block;
   content: "";
@@ -732,7 +785,7 @@ table {
   position: relative;
 }
 
-/* line 445, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 478, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 #equip::after {
   display: block;
   content: "";
@@ -743,30 +796,30 @@ table {
   left: 800px;
 }
 
-/* line 456, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 489, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .equip {
   cursor: pointer;
 }
 
-/* line 458, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 491, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .equip::before {
   width: 663px;
 }
 
-/* line 463, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 496, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .equipment {
   text-align: center;
   width: 900px;
   overflow: hidden;
 }
 
-/* line 467, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 500, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .equipment img {
   margin: auto;
   width: 650px;
 }
 
-/* line 473, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 506, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .headgear {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -776,7 +829,7 @@ table {
   z-index: 999;
 }
 
-/* line 480, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 513, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .headgear::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -789,7 +842,7 @@ table {
   transform: rotate(-22deg);
 }
 
-/* line 491, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 524, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .headgear::after {
   display: block;
   content: "circlets, crowns, hats, headbands, helmets";
@@ -807,12 +860,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 505, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 538, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .headgear:hover::after {
   height: 35px;
 }
 
-/* line 511, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 544, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .facegear {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -822,7 +875,7 @@ table {
   left: 599px;
 }
 
-/* line 518, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 551, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .facegear::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -835,7 +888,7 @@ table {
   right: 97px;
 }
 
-/* line 529, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 562, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .facegear::after {
   display: block;
   content: "goggles, lenses, masks, spectacles, third eyes";
@@ -853,12 +906,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 543, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 576, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .facegear:hover::after {
   height: 35px;
 }
 
-/* line 549, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 582, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .neckgear {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -868,7 +921,7 @@ table {
   left: 590px;
 }
 
-/* line 556, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 589, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .neckgear::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -881,7 +934,7 @@ table {
   right: 98px;
 }
 
-/* line 567, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 600, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .neckgear::after {
   display: block;
   content: "amulets, badges, brooches, collars, medals, medallions, necklaces, pendants, periapts, scarabs, scarfs, torcs";
@@ -899,12 +952,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 581, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 614, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .neckgear:hover::after {
   height: 70px;
 }
 
-/* line 587, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 620, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .shoulders {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -914,7 +967,7 @@ table {
   left: 97px;
 }
 
-/* line 594, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 627, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .shoulders::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -927,7 +980,7 @@ table {
   right: -197px;
 }
 
-/* line 605, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 638, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .shoulders::after {
   display: block;
   content: "capes, cloaks, mantles, shawls";
@@ -945,12 +998,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 619, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 652, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .shoulders:hover::after {
   height: 20px;
 }
 
-/* line 625, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 658, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .body {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -960,7 +1013,7 @@ table {
   left: 152px;
 }
 
-/* line 632, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 665, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .body::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -973,7 +1026,7 @@ table {
   right: -198px;
 }
 
-/* line 643, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 676, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .body::after {
   display: block;
   content: "armor, robes";
@@ -991,12 +1044,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 657, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 690, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .body:hover::after {
   height: 20px;
 }
 
-/* line 663, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 696, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .torso {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1006,7 +1059,7 @@ table {
   left: 609px;
 }
 
-/* line 670, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 703, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .torso::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1019,7 +1072,7 @@ table {
   right: 92px;
 }
 
-/* line 681, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 714, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .torso::after {
   display: block;
   content: "shirts, tunics, vests, vestments";
@@ -1037,12 +1090,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 695, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 728, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .torso:hover::after {
   height: 20px;
 }
 
-/* line 701, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 734, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .hands {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1052,7 +1105,7 @@ table {
   left: 667px;
 }
 
-/* line 708, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 741, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .hands::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1065,7 +1118,7 @@ table {
   right: 95px;
 }
 
-/* line 719, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 752, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .hands::after {
   display: block;
   content: "gauntlets, gloves";
@@ -1083,12 +1136,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 733, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 766, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .hands:hover::after {
   height: 20px;
 }
 
-/* line 739, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 772, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .arms {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1098,7 +1151,7 @@ table {
   left: 83px;
 }
 
-/* line 746, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 779, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .arms::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1111,7 +1164,7 @@ table {
   right: -196px;
 }
 
-/* line 757, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 790, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .arms::after {
   display: block;
   content: "armbands, bracelets, bracers";
@@ -1129,12 +1182,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 771, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 804, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .arms:hover::after {
   height: 20px;
 }
 
-/* line 777, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 810, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .waist {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1144,7 +1197,7 @@ table {
   left: 164px;
 }
 
-/* line 784, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 817, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .waist::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1157,7 +1210,7 @@ table {
   right: -190px;
 }
 
-/* line 795, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 828, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .waist::after {
   display: block;
   content: "belts, girdles, sashes";
@@ -1175,12 +1228,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 809, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 842, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .waist:hover::after {
   height: 20px;
 }
 
-/* line 815, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 848, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .pants {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1190,7 +1243,7 @@ table {
   left: 611px;
 }
 
-/* line 822, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 855, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .pants::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1203,7 +1256,7 @@ table {
   right: 95px;
 }
 
-/* line 833, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 866, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .pants::after {
   display: block;
   content: "pants";
@@ -1221,12 +1274,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 847, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 880, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .pants:hover::after {
   height: 20px;
 }
 
-/* line 853, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 886, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .feet {
   width: 200px;
   border-bottom: 2px solid #993629;
@@ -1236,7 +1289,7 @@ table {
   left: 611px;
 }
 
-/* line 860, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 893, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .feet::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1249,7 +1302,7 @@ table {
   right: 92px;
 }
 
-/* line 871, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 904, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .feet::after {
   display: block;
   content: "boots, sandals, shoes, slippers";
@@ -1267,12 +1320,12 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 885, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 918, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .feet:hover::after {
   height: 20px;
 }
 
-/* line 891, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 924, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .ring {
   width: 200px;
   position: absolute;
@@ -1284,7 +1337,7 @@ table {
   border-radius: 5px;
 }
 
-/* line 900, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 933, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .ring::before {
   border-bottom: 2px solid #993629;
   width: 100px;
@@ -1297,44 +1350,52 @@ table {
   right: -179px;
 }
 
-/* line 913, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 946, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.filters-containter {
+  background: #333333;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding-top: 5px;
+  width: 100%;
+  z-index: 999999999;
+}
+
+/* line 956, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters {
   background: #dddddd;
   color: #993629;
   border-radius: 15px;
   margin-top: 10px;
-  position: sticky;
-  top: 10px;
   height: 100px;
-  z-index: 999;
   padding: 10px;
 }
 
-/* line 923, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 963, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .button-group {
   display: inline-block;
   float: left;
 }
 
-/* line 927, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 967, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #sorts {
   float: right;
 }
 
-/* line 930, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 970, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters h3 {
   font-family: 'Amatica SC', cursive;
   display: inline-block;
   font-size: 25px;
 }
 
-/* line 935, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 975, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #filters {
   width: 40%;
   float: left;
 }
 
-/* line 938, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 978, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #filters h3 {
   float: right;
   border-left: 2px solid #993629;
@@ -1342,7 +1403,7 @@ table {
   height: 100px;
 }
 
-/* line 944, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 984, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #filters #reset {
   float: right;
   position: relative;
@@ -1350,13 +1411,13 @@ table {
   left: 55px;
 }
 
-/* line 951, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 991, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #sorts {
   width: 40%;
   float: right;
 }
 
-/* line 954, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 994, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #sorts h3 {
   float: left;
   border-right: 2px solid #993629;
@@ -1364,7 +1425,7 @@ table {
   height: 100px;
 }
 
-/* line 960, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1000, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters #sorts #reset {
   float: left;
   position: relative;
@@ -1372,7 +1433,7 @@ table {
   right: 55px;
 }
 
-/* line 967, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1007, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .button {
   background: transparent;
   border: 0;
@@ -1385,7 +1446,7 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 974, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1014, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .button i {
   margin: 0;
   -webkit-transition: all 0.5s linear;
@@ -1394,7 +1455,7 @@ table {
   transition: all 0.5s linear;
 }
 
-/* line 978, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1018, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .button i:hover::before {
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -1404,7 +1465,7 @@ table {
   color: #dddddd;
 }
 
-/* line 984, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1024, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .button i::before {
   margin: 0;
   -webkit-transition: all 0.5s linear;
@@ -1416,32 +1477,31 @@ table {
   font-size: 30px;
 }
 
-/* line 993, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1033, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .filters .is-checked {
   color: #993629;
 }
 
-/* line 999, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1039, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .inv::before {
   width: 714px;
 }
 
-/* line 1004, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1044, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .inventory {
-  padding: 20px 50px;
+  padding: 20px 30px;
   display: inline-block;
-  text-align: center;
   width: 900px;
 }
 
-/* line 1009, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1048, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .inventory::after {
   display: block;
   clear: both;
   content: '';
 }
 
-/* line 1016, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1055, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item {
   width: 300px;
   padding: 10px 20px;
@@ -1454,27 +1514,27 @@ table {
   border-bottom: 2px solid #993629;
 }
 
-/* line 1027, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1066, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item .item-weight::after {
   content: 'lb.';
   display: inline-block;
   margin-left: 3px;
 }
 
-/* line 1034, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1073, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item .item-value::after {
   content: 'gp';
   display: inline-block;
   margin-left: 3px;
 }
 
-/* line 1040, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1079, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item b {
   font-family: 'Amatica SC', cursive;
   font-size: 35px;
 }
 
-/* line 1044, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1083, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item i {
   background: #993629;
   border-radius: 50%;
@@ -1486,7 +1546,7 @@ table {
   user-select: none;
 }
 
-/* line 1050, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1089, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item i::before {
   content: 'x';
   display: inline-block;
@@ -1495,16 +1555,17 @@ table {
   bottom: 1px;
 }
 
-/* line 1058, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1097, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item p {
   text-align: justify;
   margin: auto -10px;
 }
 
-/* line 1062, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1101, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item span {
   text-align: center;
   display: block;
+  cursor: default;
   margin-bottom: 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1512,7 +1573,7 @@ table {
   user-select: none;
 }
 
-/* line 1067, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1107, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item span a {
   background: #993629;
   padding: 0 10px;
@@ -1521,11 +1582,55 @@ table {
   font-size: 14px;
   margin: 3px 5px;
   display: inline-block;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* line 1076, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+/* line 1118, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
 .item span a[title] {
   cursor: help;
+}
+
+/* line 1124, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.item-container {
+  width: 800px;
+  padding: 10px 20px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  border-top: 2px solid #993629;
+  border-bottom: 2px solid #993629;
+  margin-bottom: 15px;
+}
+
+/* line 1133, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.item-container b {
+  font-family: 'Amatica SC', cursive;
+  font-size: 35px;
+}
+
+/* line 1137, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.item-container i {
+  background: #993629;
+  border-radius: 50%;
+  border: 5px solid #993629;
+  float: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 1143, C:/Users/Cher/Documents/GitHub/Sheet/scss/_shared.scss */
+.item-container i::before {
+  content: 'x';
+  display: inline-block;
+  margin-right: 2px;
+  position: relative;
+  bottom: 1px;
 }
 
 /*# sourceMappingURL=../css/shae.map */
