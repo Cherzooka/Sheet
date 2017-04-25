@@ -1,0 +1,720 @@
+
+#equip {
+  font-family: 'Amatica SC', cursive;
+  font-size: 40px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-decoration-skip: ink;
+  padding-right: 100px;
+  &::before {
+    display: block;
+    content: "";
+    border-bottom: 4px solid $accent;
+    top: 54px;
+    position: relative;
+  }
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 4px solid $accent;
+    width: 96px;
+    position: relative;
+    top: -9px;
+    left: 800px;
+  }
+}
+
+.equip {
+  cursor: pointer;
+  &::before {
+    width: 663px;
+  }
+}
+
+.equipment {
+  text-align: center;
+  width: 900px;
+  overflow: hidden;
+  img {
+    margin: auto;
+    width: 650px;
+  }
+}
+
+.headgear {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  top: 128px;
+  left: 163px;
+  z-index: 999;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    left: 196px;
+    top: 6px;
+    transform: rotate(-22deg);
+  }
+  &::after {
+    display: block;
+    content: "circlets, crowns, hats, headbands, helmets";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 35px;
+    }
+  }
+}
+
+.facegear {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 100px;
+  left: 599px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-17deg);
+    top: 39px;
+    right: 97px;
+  }
+  &::after {
+    display: block;
+    content: "goggles, lenses, masks, spectacles, third eyes";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 35px;
+    }
+  }
+}
+
+.neckgear {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 197px;
+  left: 590px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(12deg);
+    top: 15px;
+    right: 98px;
+  }
+  &::after {
+    display: block;
+    content: "amulets, badges, brooches, collars, medals, medallions, necklaces, pendants, periapts, scarabs, scarfs, torcs";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 70px;
+    }
+  }
+}
+
+.shoulders {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 201px;
+  left: 97px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(18deg);
+    top: 40px;
+    right: -197px;
+  }
+  &::after {
+    display: block;
+    content: "capes, cloaks, mantles, shawls";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.body {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 287px;
+  left: 152px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-15deg);
+    top: 12px;
+    right: -198px;
+  }
+  &::after {
+    display: block;
+    content: "armor, robes";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.torso {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 299px;
+  left: 609px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(27deg);
+    top: 3px;
+    right: 92px;
+  }
+  &::after {
+    display: block;
+    content: "shirts, tunics, vests, vestments";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.hands {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 420px;
+  left: 667px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-22deg);
+    top: 44px;
+    right: 95px;
+  }
+  &::after {
+    display: block;
+    content: "gauntlets, gloves";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.arms {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 360px;
+  left: 83px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(20deg);
+    top: 42px;
+    right: -196px;
+  }
+  &::after {
+    display: block;
+    content: "armbands, bracelets, bracers";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.waist {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 441px;
+  left: 164px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-35deg);
+    top: -3px;
+    right: -190px;
+  }
+  &::after {
+    display: block;
+    content: "belts, girdles, sashes";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.pants {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 572px;
+  left: 611px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(24deg);
+    top: 5px;
+    right: 95px;
+  }
+  &::after {
+    display: block;
+    content: "pants";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.feet {
+  width: 200px;
+  border-bottom: 2px solid $accent;
+  position: absolute;
+  z-index: 999;
+  top: 703px;
+  left: 611px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-31deg);
+    top: 50px;
+    right: 92px;
+  }
+  &::after {
+    display: block;
+    content: "boots, sandals, shoes, slippers";
+    width: 190px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 0;
+    font-size: 12px;
+    position: absolute;
+    @include transition(all 0.5s linear);
+  }
+  &:hover {
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.ring {
+  width: 200px;
+  position: absolute;
+  z-index: 999;
+  top: 545px;
+  padding-bottom: 3px;
+  left: 107px;
+  border: 2px solid $accent;
+  border-radius: 5px;
+  &::before {
+    border-bottom: 2px solid $accent;
+    width: 100px;
+    z-index: 999;
+    content: "";
+    display: block;
+    position: relative;
+    transform: rotate(-20deg);
+    top: -19px;
+    right: -179px;
+  }
+}
+
+.filters-containter {
+  background: $background;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding-top: 5px;
+  width: 100%;
+  z-index: 999999999;
+}
+
+.filters {
+  background: $font;
+  color: $accent;
+  border-radius: 15px;
+  margin-top: 10px;
+  height: 100px;
+  padding: 10px;
+  #reset {
+    padding: 1px 6px;
+  }
+  .button-group {
+    display: inline-block;
+    float: left;
+  }
+  #sorts {
+    float: right;
+  }
+  h3 {
+    font-family: 'Amatica SC', cursive;
+    display: inline-block;
+    font-size: 25px;
+  }
+  #filters {
+    width: 40%;
+    float: left;
+    h3 {
+      float: right;
+      border-left: 2px solid $accent;
+      padding-left: 20px;
+      height: 100px;
+    }
+    #reset {
+      float: right;
+      position: relative;
+      top: 55px;
+      left: 60px;
+    }
+  }
+  #sorts {
+    width: 40%;
+    float: right;
+    h3 {
+      float: left;
+      border-right: 2px solid $accent;
+      padding-right: 20px;
+      height: 100px;
+    }
+    #reset {
+      float: left;
+      position: relative;
+      top: 55px;
+      right: 60px;
+    }
+  }
+  .button {
+    background: transparent;
+    outline: 0;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    color: $background;
+    border-radius: 5px;
+    margin: 6px 5px;
+    padding: 0;
+    @include transition(all 0.5s linear);
+    i {
+      margin: 0;
+      @include transition(all 0.5s linear);
+      &:hover {
+        &::before {
+          @include transition(all 0.5s linear);
+          background: $accent;
+          color: $font;
+        }
+      }
+      &::before {
+        margin: 0;
+        @include transition(all 0.5s linear);
+        border-radius: 5px;
+        padding: 3px 10px;
+        font-size: 30px;
+      }
+    }
+  }
+  .is-checked {
+    color: $accent;
+    border: 1px solid $accent;
+  }
+}
+
+.inv {
+  &::before {
+    width: 714px;
+  }
+}
+
+.inventory {
+  padding: 20px 30px;
+  display: inline-block;
+  width: 900px;
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+.item {
+  width: 300px;
+  padding: 10px 20px;
+  margin: 10px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  float: left;
+  border-top: 2px solid $accent;
+  border-bottom: 2px solid $accent;
+  .item-weight {
+    &::after {
+      content: 'lb.';
+      display: inline-block;
+      margin-left: 3px;
+    }
+  }
+  .item-value {
+    &::after {
+      content: 'gp';
+      display: inline-block;
+      margin-left: 3px;
+    }
+  }
+  b {
+    font-family: 'Amatica SC', cursive;
+    font-size: 35px;
+  }
+  i {
+    background: $accent;
+    border-radius: 50%;
+    border: 5px solid $accent;
+    float: right;
+    @include user-select(none);
+    &::before {
+      content: 'x';
+      display: inline-block;
+      margin-right: 2px;
+      position: relative;
+      bottom: 1px;
+    }
+  }
+  p {
+    text-align: justify;
+    margin: auto -10px;
+  }
+  span {
+    text-align: center;
+    display: block;
+    cursor: default;
+    margin-bottom: 10px;
+    @include user-select(none);
+    a {
+      background: $accent;
+      padding: 0 10px;
+      padding-bottom: 3px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin: 3px 5px;
+      display: inline-block;
+      cursor: default;
+      @include user-select(none);
+    }
+    a[title] {
+      cursor: help;
+    }
+  }
+}
+
+.item-container {
+  width: 800px;
+  padding: 10px 20px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  border-top: 2px solid $accent;
+  border-bottom: 2px solid $accent;
+  margin-bottom: 15px;
+  b {
+    font-family: 'Amatica SC', cursive;
+    font-size: 35px;
+  }
+  p {
+    margin: auto -10px;
+  }
+  i {
+    background: $accent;
+    border-radius: 50%;
+    border: 5px solid $accent;
+    float: right;
+    @include user-select(none);
+    &::before {
+      content: 'x';
+      display: inline-block;
+      margin-right: 2px;
+      position: relative;
+      bottom: 1px;
+    }
+  }
+}
+
+.stamp {
+  span {
+    display: block;
+    cursor: default;
+    margin-left: 50px;
+    @include user-select(none);
+    a {
+      background: $accent;
+      padding: 0 10px;
+      padding-bottom: 3px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin: 3px 5px;
+      display: inline-block;
+      cursor: default;
+      @include user-select(none);
+    }
+  }
+}

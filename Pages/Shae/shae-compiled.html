@@ -15,14 +15,14 @@
   <link href="../../css/font-awesome.css" rel="stylesheet">
   
   <script language="JavaScript" type="text/javascript" src="../../js/jquery-3.2.0.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Wire+One|Nova+Mono" 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Wire+One|Nova+Mono|Amatica+SC" 
     rel="stylesheet">
   
   <script language="JavaScript" type="text/javascript" src="../../js/jquery.style-my-tooltips.js"></script>
   <script language="JavaScript" type="text/javascript" src="../../js/isotope.pkgd.js"></script>
   <script language="JavaScript" type="text/javascript" src="../../js/fit-columns.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+  <script language="Javascript" type="text/javascript" src="../../js/imagesloaded.pkgd.js"></script>
   <script language="JavaScript" type="text/javascript" src="../../js/shared.js"></script>
   
   <link rel="import" id="basics-tab" href="tabs/basics.html">
@@ -50,7 +50,7 @@
         tabindex="0" title="Basics"> 
         <i class="fa fa-user-o" aria-hidden="true"></i> </label>
       <div id="tab-content1" class="tab-content" role="tabpanel" 
-        aria-labelledby="Basics" aria-hidden="false">
+        aria-labelledby="Basics" aria-hidden="false" style="padding-bottom:0;">
         
     <!------------>
     
@@ -59,60 +59,89 @@
     <div class="basic-info">
       <h2> Shae Ó Ríain</h2>
       <span> <a title="Variant">Human</a> <b>♦</b> 
-          <a title="Instrumentalist/Singer">Entertainer</a> <b>♦</b> 
-          <a title="Bard 3/Fight 3">Skáld</a> <b>♦</b> 
+          <a title="Instrumentalist / Singer">Entertainer</a> <b>♦</b> 
+          <a title="Bard 3 / Fight 3">Skáld</a> <b>♦</b> 
           Sixth </span>
     
       <br><br>
 
-      <p> Sed in mi quis sem fringilla porta. Vestibulum justo nulla, faucibus 
-      eget tempor eget, dignissim ac velit. Proin vel egestas tellus. Donec 
-      consequat nisi vitae tempus tristique. In a mi eu ex imperdiet faucibus. 
-      Nulla sed pellentesque felis. Praesent efficitur blandit nulla in feugiat.
-      Sed sed magna efficitur, malesuada quam vitae, pulvinar nunc. Sed 
-      porttitor in diam eget egestas. Fusce ac nisi id augue varius congue. </p>
+      <p> A red-haired and freckled country boy, skilled with the arts of the 
+      violin, vocals, and smashing things in the face with axes. Shae is a 
+      bright and generally jovial boy, who generally attempts to lighten 
+      difficult situations with humor. He's good-natured and a people-person,
+      despite commonly being regarded as needy and annoying by others.</p>
     
     </div>
     
     <div class="stat-block">
-      <div class="stat"> <b style="left: -30px;">STR</b> <span>16</span> <i>+3</i> 
+      <div class="stat"> <b>STR</b> <span>16</span> <i>+3</i>
         <div class="stat-skills">
           <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
-          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Atheletics </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Atheletics </span>
         </div>
       </div>
       <div class="stat"> <b>DEX</b> <span>12</span> <i>+1</i> 
         <div class="stat-skills">
-          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
-          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Acrobatics</span> <br>
+          <i class="fa fa-square" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Acrobatics</span> <br>
           <span><i class="fa fa-circle-o" aria-hidden="true"></i> Sleight of Hand</span> <br>
-          <span style="top:-34px;position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Stealth</span> <br>
-          </div>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Stealth</span> <br>
+        </div> 
       </div>
       <div class="stat"> <b>CON</b> <span>14</span> <i>+2</i>
-        <div class="stat-skills">
+         <div class="stat-skills">
           <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
         </div>
       </div>
       <div class="stat"> <b>INT</b> <span>08</span> <i>-1</i> 
-        <div class="stat-skills">
+         <div class="stat-skills">
           <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
           <span><i class="fa fa-circle-o" aria-hidden="true"></i> Arcana <br> </span>
           <span><i class="fa fa-circle-o" aria-hidden="true"></i> History <br> </span>
-          <span style="position:relative;top:-34px;"><i class="fa fa-circle-o" aria-hidden="true"></i> Investigation <br> </span>
-          <span style="position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Nature <br> </span>
-          <span style="position:relative;"><i class="fa fa-circle-o" aria-hidden="true"></i> Religion <br> </span>
-          </div>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Investigation <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Nature <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Religion <br> </span>
+        </div>
       </div>
-      <div class="stat"> <b>WIS</b> <span>09</span> <i>-1</i> </div>
-      <div class="stat"> <b>CHA</b> <span>14</span> <i>+2</i> </div>
+      <div class="stat"> <b>WIS</b> <span>09</span> <i>-1</i>
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Animal Handling <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Insight <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Medicine <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Perception <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Survival <br> </span>
+        </div>
+      </div>
+      <div class="stat"> <b>CHA</b> <span>14</span> <i>+2</i>
+        <div class="stat-skills">
+          <i class="fa fa-square" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Deception <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Intimidation <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Performance <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Persuasion <br> </span>
+        </div>
+      </div>
     </div>
     
-    <div class="alignment">
+    <div id="basicscontainer">
+      <div id="hpcontainer"><div class="hpbar">
+        <span class="hpbarinner" style="width: 70%"></span></div>
+      <div id="hp">43 / 43 HP</div></div>
+      
+      <div class="stattbox">
+        <div class="statt"> <b>Armor Class</b> <span>10</span> </div>
+        <div class="statt"> <b>Initiative</b> <span>+0</span> </div>
+        <div class="statt"> <b>Proficiency</b> <span>+2</span> </div>
+        <div class="statt"> <b>Speed</b> <span>30</span> </div>
+        <div class="statt"> <b>Perception</b> <span>10</span> </div>
+      </div>
+      
+      <div class="alignment">
       <h3>Alignment</h3>
-    <div class="alignment-label turn" style="top: 77px; right: 50px;"> Chaotic </div>
-    <div class="alignment-label" style="left: 5px;"> Good </div>
-    <table><tr>
+        <div class="alignment-label turn" style="top: 77px; right: 50px;"> Chaotic </div>
+        <div class="alignment-label" style="left: 5px;"> Good </div>
+      <table><tr>
         <td title="Chaotic Good">.</td>
         <td class="selected" title="Neutral Good">.</td>
         <td title="Lawful Good">.</td></tr><tr>
@@ -122,12 +151,61 @@
         <td title="Chaotic Evil">.</td>
         <td title="Neutral Evil">.</td>
         <td title="Lawful Evil">.</td></tr>
-    </table>
-    <div class="alignment-label" style="left: 5px; top: -14px;"> Evil </div>
-    <div class="alignment-label turn" style="left: 60px; bottom: 91px;"> Lawful </div>
-    
+      </table>
+        <div class="alignment-label" style="left: 5px; top: -14px;"> Evil </div>
+        <div class="alignment-label turn" style="left: 60px; bottom: 91px;"> Lawful </div>
+      </div>
+      </div>
+      
+      <div class="social-stats-container">
+        <div class="social-stat">
+          <h1 id="aggressive">Aggressive</h1>
+          <h2 id="benevolent">Benevolent</h2>
+          <div class="stat-bar-container"><div id="right-bar" class="stat-bar">
+            <span id="right-inner" class="stat-bar-inner" style="width: 50%;"></span></div>
+          <div id="left-bar" class="stat-bar">
+            <span id="left-inner" class="stat-bar-inner" style="width: 50%;"></span></div></div>
+          </div>
+          
+        <div class="social-stat">
+          <h1 id="passionate">Passionate</h1>
+          <h2 id="rational">Rational</h2>
+          <div class="stat-bar-container"><div id="right-bar" class="stat-bar">
+            <span id="right-inner" class="stat-bar-inner" style="width: 80%;"></span></div>
+          <div id="left-bar" class="stat-bar">
+            <span id="left-inner" class="stat-bar-inner" style="width: 80%;"></span></div></div>
+          </div>
+          
+        <div class="social-stat">
+          <h1 id="diplomatic">Diplomatic</h1>
+          <h2 id="cruel">Cruel</h2>
+          <div class="stat-bar-container"><div id="right-bar" class="stat-bar">
+            <span id="right-inner" class="stat-bar-inner" style="width: 65%;"></span></div>
+          <div id="left-bar" class="stat-bar">
+            <span id="left-inner" class="stat-bar-inner" style="width: 65%;"></span></div></div>
+          </div>
+          
+        <div class="social-stat">
+          <h1 id="deceptive">Deceptive</h1>
+          <h2 id="honest">Honest</h2>
+          <div class="stat-bar-container"><div id="right-bar" class="stat-bar">
+            <span id="right-inner" class="stat-bar-inner" style="width: 40%;"></span></div>
+          <div id="left-bar" class="stat-bar">
+            <span id="left-inner" class="stat-bar-inner" style="width: 40%;"></span></div></div>
+          </div>
+          
+        <div class="social-stat">
+          <h1 id="clever">Clever</h1>
+          <h2 id="stoic">Stoic</h2>
+          <div class="stat-bar-container"><div id="right-bar" class="stat-bar">
+            <span id="right-inner" class="stat-bar-inner" style="width: 90%;"></span></div>
+          <div id="left-bar" class="stat-bar">
+            <span id="left-inner" class="stat-bar-inner" style="width: 90%;"></span></div></div>
+          </div>
+        </div>
+        
     </div>
-</block> </block>
+</block></block>
 
     </li>
 
@@ -149,10 +227,10 @@
   <div class="bio-info">
     <span> <b>Full Name</b> Séaghdha Þórir Ó Ríain <br> [ ᛋᛠᚷᚺᛞᚺᚨ᛫ᚦᛟᚱᛁᚱ᛫ᛟ᛫ᚱᛁᚨᛁᚾ ] </span>
     <span> <b>Race</b> Human 
-      [<button id="fjellfolk-open">Fjellfolk</button>-<button id="hito-open">Hito</button>] </span>
-    <span> <b>Gender</b> Male [he/him] </span>
+      [ <button id="fjellfolk-open">Fjellfolk</button>-<button id="hitoic-open">Hitoic</button> ] </span>
+    <span> <b>Gender</b> Male [ he/him ] </span>
     <span> <b>Height</b> 5'9" </span>
-    <span> <b>Diety</b> [diety] </span>
+    <span> <b>Diety</b> |Fjellfolk Faith| </span>
     <span> <b>Languages</b> <button id="fjelltal-open">Fjelltal</button>, Common </span>
     <span> <b>Birthplace</b> <button id="fegard-open">Fégård</button>, <button id="kaldrfjoll-open">Kaldrfjǫll</button> </span>
   </div>
@@ -163,33 +241,12 @@
       <p>This section is for talking about Personality Traits, Ideals, Flaws,
       and just anything related to talking about the character's personality.</p>
       
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a 
-      condimentum metus. Donec ornare mi lorem, eget consectetur quam mattis ut.
-      Aenean at eros nec elit imperdiet condimentum ac quis nisi. Quisque nulla
-      est, commodo non tempus eget, condimentum sed ante. Ut id sem vel risus 
-      ultrices cursus eu vitae nulla. Vestibulum ac lacus sagittis, elementum 
-      diam quis, convallis neque. Duis nec velit sit amet elit fringilla 
-      vestibulum luctus in augue. Sed ullamcorper lectus a diam elementum 
-      ultricies. Sed ultrices blandit lorem ut varius. Sed semper posuere 
-      lorem, eu bibendum arcu laoreet at. Duis vulputate fringilla massa at 
-      volutpat. Duis tempus viverra pharetra. Morbi gravida magna ut justo 
-      hendrerit, non fringilla nisi tempor. Cras quis tellus velit. 
-      Pellentesque eu velit sed nibh gravida commodo ut ut dui.</p>
-
-      <p>Donec eros diam, sollicitudin sed massa in, consequat consequat odio. 
-      Duis a velit vel elit porttitor varius. Etiam consequat velit libero, ut 
-      cursus enim tristique eu. Vestibulum congue mattis ultrices. Aliquam 
-      lacinia lobortis felis eu rhoncus. Vivamus id arcu neque. Nam eu urna 
-      nulla. Aliquam erat volutpat.</p>
-
-      <p>Quisque consequat gravida erat et vehicula. Nulla rhoncus viverra nisl
-      vel vulputate. Pellentesque imperdiet orci a nulla euismod, a fermentum 
-      turpis imperdiet. Praesent eleifend condimentum elit a congue. Morbi 
-      porta ullamcorper mi quis maximus. Proin feugiat ligula eget nunc 
-      placerat consequat. Donec dui ex, posuere eget neque eget, pulvinar 
-      rutrum purus. Praesent et leo nunc. Nulla vitae ligula vitae nisi 
-      ullamcorper vehicula vel at enim. Nullam pretium feugiat sodales. Aliquam
-      tempor arcu ac consequat feugiat.</p>
+      <p>| I get bitter if I'm not the center of attention. | <br> 
+      | People. I like seeing the smiles on people's faces when I perform. 
+      That's all that matters. | <br>
+      | A scandal prevents me from ever going home again. 
+      <s>That kind of trouble seems to follow me around</s> | <br>
+      | I'm a sucker for a pretty face. |</p>
     </div>
   
     <div class="bio-block">
@@ -197,33 +254,37 @@
       <p>This section is for further details into the character's backstory 
       and history.</p>
       
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a 
-      condimentum metus. Donec ornare mi lorem, eget consectetur quam mattis ut.
-      Aenean at eros nec elit imperdiet condimentum ac quis nisi. Quisque nulla
-      est, commodo non tempus eget, condimentum sed ante. Ut id sem vel risus 
-      ultrices cursus eu vitae nulla. Vestibulum ac lacus sagittis, elementum 
-      diam quis, convallis neque. Duis nec velit sit amet elit fringilla 
-      vestibulum luctus in augue. Sed ullamcorper lectus a diam elementum 
-      ultricies. Sed ultrices blandit lorem ut varius. Sed semper posuere 
-      lorem, eu bibendum arcu laoreet at. Duis vulputate fringilla massa at 
-      volutpat. Duis tempus viverra pharetra. Morbi gravida magna ut justo 
-      hendrerit, non fringilla nisi tempor. Cras quis tellus velit. 
-      Pellentesque eu velit sed nibh gravida commodo ut ut dui.</p>
-
-      <p>Donec eros diam, sollicitudin sed massa in, consequat consequat odio. 
-      Duis a velit vel elit porttitor varius. Etiam consequat velit libero, ut 
-      cursus enim tristique eu. Vestibulum congue mattis ultrices. Aliquam 
-      lacinia lobortis felis eu rhoncus. Vivamus id arcu neque. Nam eu urna 
-      nulla. Aliquam erat volutpat.</p>
-
-      <p>Quisque consequat gravida erat et vehicula. Nulla rhoncus viverra nisl
-      vel vulputate. Pellentesque imperdiet orci a nulla euismod, a fermentum 
-      turpis imperdiet. Praesent eleifend condimentum elit a congue. Morbi 
-      porta ullamcorper mi quis maximus. Proin feugiat ligula eget nunc 
-      placerat consequat. Donec dui ex, posuere eget neque eget, pulvinar 
-      rutrum purus. Praesent et leo nunc. Nulla vitae ligula vitae nisi 
-      ullamcorper vehicula vel at enim. Nullam pretium feugiat sodales. Aliquam
-      tempor arcu ac consequat feugiat.</p>
+      <ul>
+        <li>born in fegard, he is BIG BRO</li>
+        <li>village is smol, sior is smart, shae can? smahs?</li>
+        <li>hes surprisingly good with the sheep</li>
+        <li>(also boys)</li>
+        <li>and he can sing</li>
+        <li>hot dang can he sing</li>
+        <li>dad gets him a fancy viol to leanr</li>
+        <li>which he learns the shit out of </li>
+        <li>hes also constnatly whiny and needy (spoilers: this never changes)</li>
+        <li>hes able to make some money working at a tavern, doing both bartending/serving
+        and performing things</li>
+        <li>with money from parents, its enough to get him Out</li>
+        <li>so he journeys to sildvik,</li>
+        <li>and gets on a boat to go to bard college for bards</li>
+        <li>it goes good</li>
+        <li>for a bit (hes not very good at School and Rules and Paying Attention)</li>
+        <li>he drops out after a few years</li>
+        <li>maybe like two?</li>
+        <li>but hot shit is that embarassing</li>
+        <li>like he worked his ass off to make money, and borrowed a lot from 
+        his parents and probably friends, just so he can drop out</li>
+        <li>(siors probably like running to place and hes just a Bard College Drop Out)</li>
+        <li>(hes too embarassed to go home now)</li>
+        <li>but hey boys gotta eat still</li>
+        <li>hes a big strong (half) fjellfolk person he can smash good sometimes</li>
+        <li>he takes to adventuring, that makes money</li>
+        <li>ish</li>
+        <li>does viggo need to happen in here</li>
+        <li>"and then shae casually propositions viggo for some casual blow jobs and viggo just Goes with it and they accidentally end up together"</li>
+      </ul>
     </div>
   
     <div class="relations">
@@ -232,17 +293,28 @@
       others and a general overview of their bonds, followed by some specific
       details on certain important relationships. </p>
       
+      <p>| I want to be famous, whatever it takes | <br>
+      | I will do anything to prove myself superior to my <s>hated</s> rival. |</p>
+      
       <div class="relation">
-        <span>Character Name</span>
-        <p>Duis quis convallis orci. Duis volutpat eu mi nec accumsan. Morbi 
-        suscipit sapien est, tempor egestas purus iaculis id. Maecenas tempus 
-        convallis mattis. Fusce et augue efficitur, molestie lectus non, aliquet
-        sem. Aenean nec mi eget velit ornare fermentum et quis ex. Morbi
-        consequat velit elit, nec dapibus lectus tincidunt eget.</p>
+        <span>Rían Stígandr Ó Faoláin</span>
+        <b> Father </b>
+        <p>A fjellfolk man from the village of Fégård. </p>
       </div>
       
       <div class="relation">
-        <span>Character Name</span>
+        <span>Hinatā Yamasaki</span>
+        <b> Mother </b>
+        <p>A Hitoic woman raised in the Kaldrfjǫll city of Síldvik, who moved 
+        to Fégård to live with her husband. She primarily supports the family 
+        through her wood carving. While quiet and shy, she's a remarkably
+        stubborn woman. Growing up, Siôrus was closer with her than Shae ever
+        was. </p>
+      </div>
+      
+      <div class="relation">
+        <span>Siôrus Hróarr Ó Ríain</span>
+        <b> Younger Twin Brother </b>
         <p>Duis quis convallis orci. Duis volutpat eu mi nec accumsan. Morbi 
         suscipit sapien est, tempor egestas purus iaculis id. Maecenas tempus 
         convallis mattis. Fusce et augue efficitur, molestie lectus non, aliquet
@@ -251,8 +323,17 @@
       </div>
       
     </div>
+    
+    <div class="bio-block">
+      <h2>Miscellaneous Notes</h2>
+        <p> </p>
+      <ul>
+        <li>Note</li>
+        <li>Note</li>
+      </ul>
+    </div>
   </div>
-</block> </block>
+</block></block>
     
     </li>
     
@@ -270,7 +351,257 @@
     
     <block class="statistics"><block id="statistics">
   <h1> Statistics </h1>
-</block> </block>
+  
+  <div class="stat-block">
+      <div class="stat"> <b>STR</b> <span>16</span> <i>+3</i>
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Atheletics </span>
+        </div>
+      </div>
+      <div class="stat"> <b>DEX</b> <span>12</span> <i>+1</i> 
+        <div class="stat-skills">
+          <i class="fa fa-square" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Acrobatics</span> <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Sleight of Hand</span> <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Stealth</span> <br>
+        </div> 
+      </div>
+      <div class="stat"> <b>CON</b> <span>14</span> <i>+2</i>
+         <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+        </div>
+      </div>
+      <div class="stat"> <b>INT</b> <span>08</span> <i>-1</i> 
+         <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Arcana <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> History <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Investigation <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Nature <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Religion <br> </span>
+        </div>
+      </div>
+      <div class="stat"> <b>WIS</b> <span>09</span> <i>-1</i>
+        <div class="stat-skills">
+          <i class="fa fa-square-o" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Animal Handling <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Insight <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Medicine <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Perception <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Survival <br> </span>
+        </div>
+      </div>
+      <div class="stat"> <b>CHA</b> <span>14</span> <i>+2</i>
+        <div class="stat-skills">
+          <i class="fa fa-square" aria-hidden="true"></i> SAVING THROW <br>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Deception <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Intimidation <br> </span>
+          <span><i class="fa fa-circle" aria-hidden="true"></i> Performance <br> </span>
+          <span><i class="fa fa-circle-o" aria-hidden="true"></i> Persuasion <br> </span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="misc-details">
+      
+    </div>
+    
+    <div class="traits">
+      <div class="trait">
+        <h3>Bardic College of Valor</h3>
+        <p>Bards of the College of Valor are daring skalds whose tales keep 
+        alive the memory of the great heroes of the past, and thereby inspire a 
+        new generation of heroes. These bards gather in mead halls or around 
+        great bonfires to sing the deeds of the mighty, both past and present.
+        They travel the land to witness greatevents firsthand and to ensure 
+        that the memory of those events doesn't pass the world. With their 
+        songs, they inspire others to reach the same heights of accomplishmen 
+        as the heroes of old. </p>
+        
+        <b>Spellcasting</b>
+        <p>You have learned to untangle and reshape the fabric of reality in 
+        harmony with your wishes and magic. Your spells are part of your vast 
+        repertoire, magic that you can tune to different situations.</p>
+        
+        <i>Spell Save DC: <span title="8 + 3 (Proficiency Bonus) + 2 (Cha Modififer)">13</span></i>
+        <i>Spell Attack Modifier: <span title="3 (Proficiency Bonus) + 2 (Cha Modifier)">5</span></i>
+        
+        <span><span><b>Ritual Casting</b>
+        <p>You can cast any bard spell you know as a ritual if that spell has 
+        the ritual tag.</p></span>
+        
+        <span><b>Spellcasting Focus</b>
+        <p>You can use a musical instrument as a spellcasting focus for your 
+        bard spells.</p></span></span>
+        
+        <b>Bardic Inspiration</b>
+        <p>You can inspire other through stirring words or music. To do so, you 
+        use a bonus action on your turn to choose one creature other than
+        yourself within 60 feet of you who can hear you. That creature gains 
+        one Bardic Inspiration die. <br><br>
+
+        Once within the next 10 minutes, the creature can roll the die and add
+        the number rolled to one ability check, attack roll, or saving throw it 
+        makes. The creature can wait until after it rolls the d20 before 
+        deciding to use the Bardic Inspiration die, but must decide before the
+        DM says whether the roll succeeds or fails. Once the Bardic Inspiration
+        die is rolled, it is lost. A creature can have only one Bardic
+        Inspiration die at a time. <br><br>
+
+        You can use this feature a number of times equal to your Charisma 
+        modifier (a minimum of once). You regain all expended uses when you 
+        finish a long rest.</p>
+        
+        <i>Number of uses: <span title="Cha Modifier">2</span></i>
+        <i>Bardic Inspiration die: <span>d6</span></i>
+        
+        <span><span><b>Jack of all Trades</b>
+        <p>Starting at 2nd level, you can add half your proficiency bonus, 
+        rounded down, to any ability check you make that doesn't already 
+        include your proficiency bonus.</p></span>
+        
+        <span><b>Expertise</b>
+        <p>At 3rd level, choose two of your skill proficiencies. Your 
+        proficiency bonus is doubled for any ability checks you make that uses
+        either of the chosen proficiencies.</p></span>
+        
+        <span><b>Bonus Proficiencies</b>
+        <p>When you join the College of Valor at 3rd level, you gain 
+        proficiency with medium armor, shields, and martial weapons. </p>
+        </span></span>
+        
+        <b>Song of Rest</b>
+        <p>Beginning at 2nd level, you can use soothing music or oration to 
+        help revitalize your wounded allies during a short rest. If you or any 
+        friendly creatures who can hear your performance regain hit points at 
+        the end of the short rest by spending one or more Hit Dice, each of 
+        those creatures regains an extra 1d6 hit points.</p>
+        
+        <b>Combat Inspiration</b>
+        <p>Also at 3rd level, you learn to inspire others in battle. A creature
+        that has a Bardic Inspiration die from you can roll that die and add 
+        the number rolled to a weapon damage roll it just made. Alternatively,
+        when an attack roll is made against the creature, it can use its 
+        reaction to roll the Bardic Inspiration die and add the number rolled 
+        to its AC against that attack, after seeing the roll but before knowing
+        whether it hits or misses.</p>
+      </div>
+      
+      <div class="trait">
+        <h3>Battlemaster</h3>
+        <p>Those who emulate the archetypal Battle Master employ martial 
+        techniques passed down through generations. To a Battle Master, combat 
+        is an academic field, sometimes including subjects beyond battle such
+        as weaponsmithing and calligraphy. Not every fighter absorbs the 
+        lessons of history, theory, and artistry that are reflected in the 
+        Battle Master archetype, but those who do are well-rounded fighters of 
+        great skill and knowledge.</p>
+        
+        <span>
+          <span>
+            <b>Dueling Fighting Style</b>
+            <p>When you are wielding a melee weapon in one hand and no other 
+            weapons, you gain +2 bonus to damage rolls with that weapon.</p>
+          </span>
+          
+          <span>
+            <b>Student of War</b>
+            <p>At 3rd level, you gain proficiency with one type of artisans' 
+            tools of your choice.</p>
+          </span>
+          
+          <span>
+            <b>Second Wind</b>
+            <p>You have a limited well of stamina that you can draw on to 
+            protect yourself from harm. On your turn, you can use a bonus 
+            action to regain hit points equal to 1d10+ your fighter level. Once 
+            you use this feature, you must finish a short or long rest before 
+            you can use it again.</p>
+          </span>
+          
+          <span>
+            <b>Action Surge</b>
+            <p>Starting at 2nd level, you can push yourself beyond your normal
+            limits for a moment. On your turn, you can take one additional 
+            action on top of your regular action and a possible bonus action.
+            Once you use this feature, you must finish a short or long rest 
+            before you can use it again.</p>
+          </span>
+        </span>
+        
+        <b>Combat Superiority</b>
+        <p>When you choose this archetype at 3rd level, you learn maneuvers 
+        that are fueled by special dice called superiority dice. You learn three
+        maneuvers of your choice. Many maneuvers enhance an attack in some way. 
+        You can use only one maneuver per attack. You have four superiority 
+        dice, which are d8s. A superiority dice is expended when you use it. 
+        You regain all your expended superiority dice when you finish a short
+        or long rest. Some of your maneuvers require your target make a saving
+        throw to resist the maneuver's effects. The saving throw DC is 
+        calculated as follows:</p>
+        
+        <i>Maneuver save DC: <span title="8 + 3 (Proficiency Bonus) + 3 (Str Modifier)">14</span></i>
+        
+        <span>
+          <span>
+            <b>Parry</b>
+            <p>When another creature damages you with a melee attack, you can 
+            use your reaction and expend one superiority die to reduce the 
+            damage by the number you roll on your superiority die + your 
+            Dexterity modifier.</p>
+          </span>
+          
+          <span>
+            <b>Riposte</b>
+            <p>When a creature misses you with a melee attack, you can use your 
+            reaction and expend one superiority die to make a melee weapon 
+            attack against the creature. If you hit, you add the superiority 
+            die to the attack's damage roll.</p>
+          </span>
+          
+          <span><b>Disarming Strike</b>
+          <p>When you hit a creature with a weapon attack, you can expend one 
+          superiority die to attempt to disarm the target, forcing it to drop 
+          one item of your choice that it's holding. You add the superiority 
+          die to the attack's damage roll, and the target must make a Strength 
+          saving throw. On a failed save, it drops the object you chose. The 
+          object lands at its feet.</p></span>
+        </span>
+      </div>
+      
+      <div class="trait">
+        <h3>By Popular Demand</h3>
+        <p>You can always find a place to perform, usually in an inn or tavern
+        but possibly with a circus, at a theatre, or even in a noble's court.
+        At such a place, you recieve free lodging and food at a modest or 
+        comfortable standard (Depending on the quality of the establishment), 
+        as long as you perform each night. In addition, your performance makes
+        you something of a local figure. When strangers recognize you, they 
+        typically take a liking to you.</p>
+      </div>
+      
+      <div class="trait">
+        <h3>War Caster</h3>
+        <p><s>Prerequisite: The ability to cast at least one spell.</s>
+        
+        You have practiced casting spells in the midst of combat, learning 
+        techniques that grant you the following benefits:</p>
+        
+        <ul>
+          <li><span>You have advantage on Constitution saving throws that you make to
+          maintain your concentration on a spell when you take damage.</span></li>
+          <li><span>You can perform the somatic components of spells even when you 
+          have weapons or a shield in one or both hands.</span></li>
+          <li><span>When a hostile creature's movement provokes an opportunity attack
+          from you, you can use your reaction to cast a spell at the creature, 
+          rather than making an opportunity attack. The spell must have a 
+          casting time of 1 action and must target only one creature.</span></li>
+        </ul>
+      </div>
+    </div>
+    
+</block></block>
     
     </li>
     
@@ -288,7 +619,198 @@
     
     <block class="spellbook"><block id="spellbook">
   <h1> Spellbook </h1>
-</block> </block>
+  
+  <div class="spell-sort-box">
+    <div id="spell-filters">
+    <div class="button-group" data-filter-group="level">
+      <h3>Spell Level</h3>
+        <button id="reset" class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".cantrip">Cantrip</button>
+        <button class="button" data-filter=".first">First Level</button>
+        <button class="button" data-filter=".second">Second Level</button>
+        <button class="button" data-filter=".third">Third Level</button>
+      </div>
+    <div class="button-group" data-filter-group="type">
+      <h3>School</h3>
+      <button id="reset" class="button is-checked" data-filter="">All</button>
+      <button class="button" data-filter=".abjuration">Abjuration</button>
+      <button class="button" data-filter=".conjuration">Conjuration</button>
+      <button class="button" data-filter=".divination">Divination</button>
+      <button class="button" data-filter=".enchantment">Enchantment</button>
+      <button class="button" data-filter=".evocation">Evocation</button>
+      <button class="button" data-filter=".illusion">Illusion</button>
+      <button class="button" data-filter=".necromancy">Necromancy</button>
+      <button class="button" data-filter=".transmutation">Transmutation</button>
+      </div>
+    <br><hr>
+    </div>
+    
+    <div class="spell-slots">
+      <h3>Spell Slots</h3>
+      LV 1
+      <span><b>1</b>
+      <b>2</b>
+      <b>3</b>
+      <b>4</b></span>
+      LV 2
+      <span><b>1</b>
+      <b>2</b></span>
+    </div>
+  </div>
+  
+  <div class="spells">
+    
+<!---
+    <div class="spell">
+      <b>Spell Name <i>school & level</i></b>
+      
+      <span><a class="casting">casting time</a>
+      <a class="srange">range</a>
+      <a class="components">components</a>
+      <a class="duration">duration</a></span>
+      
+      <p>Details</p>
+    </div>
+-->
+    
+    <div class="spell cantrip enchantment">
+      <b>Vicious Mockery <i>enchantment cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>You unleash a string of insults laced with subtle enchantments at a 
+      creature you can see within range. If the target can hear you (though it 
+      need not understand you), it must succeed on a Wisdom saving throw or take
+      1d4 psychic damage and have disadvantage on the next attack roll it makes
+      before the end of its next turn. <br><br>
+
+      This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th
+      level (3d4), and 17th level (4d4).</p>
+    </div>
+    
+    <div class="spell cantrip evocation">
+      <b>Light <i>evocation cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, <s title="firefly, phosphorescent moss">material</s></a>
+      <a class="duration">1 hour</a></span>
+      
+      <p>You touch one object that is no larger than 10 feet in any dimension. 
+      Until the spell ends, the object sheds bright light in a 20-foot radius 
+      and dim light for an additional 20 feet. The light can be colored as you 
+      like. Completely covering the object with something opaque blocks the 
+      light. The spell ends if you cast it again or dismiss it as an action.
+      <br><br>
+
+      If you target an object held or worn by a hostile creature, that creature
+      must succeed on a Dexterity saving throw to avoid the spell.</p>
+    </div>
+    
+    <div class="spell first divination">
+      <b>Speak with Animals <i>1st level divination</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">self</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>You gain the ability to comprehend and verbally communicate with beasts
+      for the duration. The knowledge and awareness of many beasts is limited 
+      by their intelligence, but at a minimum, beasts can give you information
+      about nearby locations and monsters, including whatever they can perceive
+      or have perceived within the past day. You might be able to persuade a 
+      beast to perform a small favor for you, at the DM’s discretion.</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Healing Word <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 bonus action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>A creature of your choice that you can see within range regains hit 
+      points equal to 1d4 + your spellcasting ability modifier. This spell has
+      no effect on undead or constructs. <br><br>
+
+      When you cast this spell using a spell slot of 2nd level or higher, the
+      healing increases by 1d4 for each slot level above 1st.</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Cure Wounds <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>A creature you touch regains a number of hit points equal to 1d8 + your
+      spellcasting ability modifier. This spell has no effect on undead or 
+      constructs.<br><br>
+
+      When you cast this spell using a spell slot of 2nd level or higher, the 
+      healing increases by 1d8 for each slot level above 1st.</p>
+    </div>
+    
+    <div class="spell second transmutation">
+      <b>Knock <i>2nd level transmutation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>Choose an object that you can see within range. The object can be a 
+      door, a box, a chest, a set of manacles, a padlock, or another object that 
+      contains a mundane or magical means that prevents access. <br><br>
+      
+      A target that is held shut by a mundane lock or that is stuck or barred 
+      becomes unlocked, unstuck, or unbarred. If the object has multiple locks,
+      only one of them is unlocked. <br><br>
+      
+      If you choose a target that is held shut with arcane lock, that spell is 
+      suppressed for 10 minutes, during which time the target can be opened and
+      shut normally. <br><br>
+      
+      When you cast the spell, a loud knock, audible from as far away as 300 
+      feet, emanates from the target object.</p>
+    </div>
+    
+    <div class="spell second illusion">
+      <b>Silence<i>2nd level illusion</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">120 feet</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration"><s class="concentration">concentration</s>, up to 10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>For the duration, no sound can be created within or pass through a 
+      20-foot-radius sphere centered on a point you choose within range. Any 
+      creature or object entirely inside the sphere is immune to thunder damage,
+      and creatures are deafened while entirely inside it.</p>
+    </div>
+    
+    <div class="spell second abjuration">
+      <b>Lesser Restoration <i>2nd level abjuration</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>You touch a creature and can end either one disease or one condition 
+      afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+    </div>
+  </div>
+</block></block>
     
     </li>
     
@@ -297,7 +819,7 @@
     <li>
       <input type="radio" name="tabs" id="tab5">
       <label for="tab5" role="tab" aria-selected="false" aria-controls="panel5" 
-        tabindex="0" title="Inventory"> 
+        tabindex="0" title="Inventory" id="inventory-button"> 
         <i class="fa fa-briefcase" aria-hidden="true"></i> </label>
       <div id="tab-content5" class="tab-content" role="tabpanel" 
         aria-labelledby="Inventory" aria-hidden="true">
@@ -364,73 +886,540 @@
     
     <div class="inv" id="equip"> Inventory </div>
     
-    <div class="filters">
-        <div class="button-group" data-filter-group="type">
-          <h3>Filters</h3><br>
-          <button class="button is-checked" data-filter="">ALL</button> |
+    <div class="filters-containter"><div class="filters">
+        <div id="filters" class="button-group" data-filter-group="type">
+          <h3>Filters</h3>
+          <button id="reset" class="button is-checked" data-filter="">reset</button>
           <button class="button" data-filter=".melee-weapon"> <i class="flaticon-war" title="Melee Weaponry"></i></button>
           <button class="button" data-filter=".ranged-weapon"> <i class="flaticon-comic" title="Ranged Weaponry"></i></button>
           <button class="button" data-filter=".armor"> <i class="flaticon-armor" title="Armor"></i></button>
-          <button class="button" data-filter=".trinkets"><i class="flaticon-fashion" title="Trinkets"></i></button>
+          <button class="button" data-filter=".trinket"><i class="flaticon-fashion" title="Trinkets"></i></button>
           <button class="button" data-filter=".survival-gear"> <i class="flaticon-games" title="Survival Gear"></i></button>
           <button class="button" data-filter=".misc"> <i class="flaticon-money" title="Miscellaneous"></i></button>
         </div>
 
         <div id="sorts" class="button-group">
           <h3>Sorting</h3>
-          <button class="button is-checked" data-sort-by="original-order">ALL</button> |
-          <button class="button" data-sort-by="name">Name</button>
-          <button class="button" data-sort-by="count">Count</button>
-          <button class="button" data-sort-by="weight">Weight</button>
-          <button class="button" data-sort-by="type">Type</button>
+          <button id="reset" class="button is-checked" data-sort-by="original-order">reset</button>
+          <button class="button" title="Sort by Name, Ascending" data-sort-by="name" data-sort-direction="asc"><i class="flaticon-sort-by-alphabet" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Value, Ascending" data-sort-by="value" data-sort-direction="asc"><i class="flaticon-sort-by-numeric-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Amount, Ascending" data-sort-by="count" data-sort-direction="asc"><i class="flaticon-sort-by-attributes-interface-button-option" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Name, Descending" data-sort-by="name" data-sort-direction="desc"><i class="flaticon-sort-reverse-alphabetical-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Value, Descending" data-sort-by="value" data-sort-direction="desc"><i class="flaticon-sort-by-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Amount, Descending" data-sort-by="count" data-sort-direction="desc"><i class="flaticon-sort-by-attributes" aria-hidden="true"></i></button>
         </div>
+      </div></div>
+      
+    <!---
+      <div class="item"> 
+        <b class="item-name">THING</b>
+        <i class="item-number">#</i><span>
+          <a class="item-weight" title="Further Details">#</a>
+          <a class="item-value" title="Further Details"> # gp </a>
+          <a class="item-type" title-"Further Details"> # </a>
+          <a title="Further Details">[tag]</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
       </div>
+    --->
     
     <div class="inventory" id="inventory">
-        <div class="item"> 
-        <b class="item-name">THING</b>
-        <i class="item-number">x #</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
-          <a class="item-value" title="Further Details"> # gp </a>
-          <a title="Further Details">[tag]</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+      
+<!--- CARRIED CONTAINER --->    
+  
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Carried</b>
+          <p> 46 lb. / 240 lb. carry weight.</p>
+        </div>
+        
+      <div class="item melee-weapon"> 
+        <b class="item-name">Battleaxe</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">10</a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a> Slashing (1d8) </a>
+          <a class="versatile">Versatile (1d10)</a>
+        </span><p> A double-headed axe with a long two-handed handle. The head 
+        is a decorated steel, and the handle of carved rowan. Overall, despite 
+        it's apparent age, it's a well made and quality weapon. The decoration 
+        on it seems to be Fjelltal runes. </p> 
       </div>
       
-      <div class="item"> 
-        <b class="item-name">THING</b>
-        <i class="item-number">x #</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
-          <a class="item-value" title="Further Details"> # gp </a>
-          <a title="Further Details">[tag]</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+      <div class="item armor"> 
+        <b class="item-name">Breastplate</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">20</a>
+          <a class="item-value">400</a>
+          <a class="item-type"> Armor </a>
+          <a> +4 AC + Dex (Max 2) </a>
+        </span><p> This armor consists of a fitted metal chest piece worn with 
+        supple leather. Although it leaves the legs and arms relatively 
+        unprotected, this armor provides good protection for the wearer's vital
+        organs while leaving the wearer relatively unencumbered. </p> 
       </div>
       
-      <div class="item"> 
-        <b class="item-name">THING</b>
-        <i class="item-number">x #</i><span>
-          <a class="item-weight" title="Further Details"> # lbs </a>
-          <a class="item-value" title="Further Details"> # gp </a>
-          <a title="Further Details">[tag]</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+      <div class="item melee-weapon ranged-weapon"> 
+        <b class="item-name">Handaxe</b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="2 lbs / each">4</a>
+          <a class="item-value" title="5 gp / each">10</a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a> Slashing (1d6) </a>
+          <a class="light">Light</a>
+          <a class="thrown">Thrown (20/60)</a>
+        </span><p> A common handaxe, with an simple iron head, and a rowan 
+        handle. Primarily used for chopping word, or other basic tasks, but can 
+        make a decent weapon when needed. </p> 
       </div>
       
+      <div class="item ranged-weapon"> 
+        <b class="item-name">Shortbow</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">2</a>
+          <a class="item-value">25</a>
+          <a class="item-type">Ranged Weaponry</a>
+          <a>Piercing (1d6)</a>
+          <a class="range">Range (80/320)</a>
+          <a class="twohanded">Two Handed</a>
+        </span><p> A simple shortbow made of yew. While simplistic and non 
+        decorated, it's a quality made bow. </p> 
+      </div>
+      
+      <div class="item trinket"> 
+        <b class="item-name">Wooden Ring</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">3</a>
+          <a class="item-type"> Trinket </a>
+        </span><p> A simple wooden ring made of yew, adorned with fjelltal 
+        runes. </p> 
+      </div>
+      
+      <div class="item melee-weapon ranged-weapon"> 
+        <b class="item-name">Dagger</b>
+        <i class="item-number">3</i><span>
+          <a class="item-weight" title="1 lb / each">3</a>
+          <a class="item-value" title="2 gp / each">6</a>
+          <a class="item-type"> Melee Weaponry </a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a> Piercing (1d4) </a>
+          <a class="finesse"> Finesse </a>
+          <a class="light"> Light </a>
+          <a class="thrown"> Thrown (20/60) </a>
+        </span><p> Basic Iron daggers for a variety of uses, from fighting, 
+        knife throwing, to letter opening. </p> 
+      </div>
+      
+      <div class="item armor"> 
+        <b class="item-name">Costume</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">5</a>
+          <a class="item-type"> Armor </a>
+          <a>0 AC + Dex </a>
+        </span><p> A colorful collection of clothing to be used in performance 
+        arts, or simply regular clothing for the more flamboyant. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Lamp</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type"> Survival Gear </a>
+        </span><p> A lamp casts bright light in a 15-foot radius and dim light 
+        for an additional 30 feet. Once lit, it burns for 6 hours on one flask
+        of oil. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Waterskin</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> A waterskin made of Elk bladder, when filled holds 4 pints 
+        of liquid. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Potion of Healing</b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title=".5 lb / each">1</a>
+          <a class="item-value" title="50 gp / each">100</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> A glass vial containing a shimmering red liquid. When
+        drunk, restores 2d4+2 hit points.</p> 
+      </div>
+        
     </div>
-</block> </block>
+    
+<!--- QUIVER CONTAINER -->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Quiver</b>
+          <i class="item-number">1</i>
+          <span><a>Carried</a></span>
+          <p>An elk leather quiver, while simplistic in detail and make, it's of
+          decent quality.</p>
+        </div>
+        
+      <div class="item ranged-weapon"> 
+        <b class="item-name">Arrows (20x) </b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="1 lb / each">2</a>
+          <a class="item-value" title="1 gp / each">2</a>
+          <a class="item-type"> Ranged Weaponry </a>
+          <a>Ammunition</a>
+        </span><p> Iron tipped maple arrows, finished with chicken feathers. </p> 
+      </div>
+        
+    </div>
+
+    
+<!--- CHEST CONTAINER --->
+      
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Chest</b>
+          <i class="item-number">1</i>
+          <p>A simple wooden chest decorated with Fjelltal runes. 
+            Holds 300 lbs of gear.</p>
+        </div>
+        
+      <div class="item misc"> 
+        <b class="item-name">Ink Bottle</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">0</a>
+          <a class="item-value">10</a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> A small glass bottle, containing a little more than one ounce 
+        of black colored writting ink.</p> 
+      </div>
+      
+      <div class="item trinket"> 
+        <b class="item-name">Viol</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">30</a>
+          <a title="Item-type">Trinket</a>
+          <a class="musical"> Musical Instrument </a>
+        </span><p> An intricately decorated and well worn viol made of maple. 
+        It appears to be well used, but remarkably well maintained. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Ink Pen</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">2</a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> A well used feathered ink pen. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Flask of oil</b>
+        <i class="item-number">2</i><span>
+          <a class="item-weight" title="1 lb. / each">2</a>
+          <a class="item-value" title="1 gp / each">2</a>
+          <a class="item-type"> Survival Gear </a>
+        </span><p> Oil usually comes in a clay flask that holds 1 pint. As an 
+        action, you can splash the oil in this flask onto a creature within 5 
+        feet of you or throw it up to 20 feet, shattering it on impact. Make a 
+        ranged attack against a target creature or object, treating the oil as 
+        an improvised weapon. On a hit, the target is covered in oil. If the 
+        target takes any fire damage before the oil dries (after 1 minute), the
+        target takes an additional 5 fire damage from the burning oil. You can
+        also pour a flask of oil on the ground to cover a 5-foot-square area, 
+        provided that the surface is level. If lit, the oil burns for 2 rounds 
+        and deals 5 fire damage to any creature that enters the area or ends 
+        its turn in the area. A creature can take this damage once per turn. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Vial of Perfume</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> A glass vial containing a pale orange scented perfume oil. 
+        The oil is scented with sandalwood, and other floral notes. </p>
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Sealing Wax</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> A red colored sealing wax, contained with an opaque bottle,
+        used primarily for sealing letters</p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Soap</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> A small bar of unscented soap. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Dice Set</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">1</a>
+          <a class="item-type">Miscellaneous</a>
+          <a class="gaming">Gaming Set</a>
+        </span><p> A pair of wooden dice, used primarily for various games. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Playing Cards</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+          <a class="gaming">Gaming Set</a>
+        </span><p> A set of playing cards, for playing a large variety of games.
+        The deck is clearly of Fjellfolk origin, decorated with Fjelltal runes,
+        and other Fjellfolk iconography. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Calligraphers Supplies</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">10</a>
+          <a class="item-type">Miscellaneous</a>
+          <a class="artisan">Artisan's Tools</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Crowbar</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">5</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Grappling Hook</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">4</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Tinderbox</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Tent, Two Person</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">20</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Whetstone</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">1</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Mess Kit</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item survival-gear"> 
+        <b class="item-name">Rations (1 day)</b>
+        <i class="item-number">5</i><span>
+          <a class="item-weight" title="2 lb / each">10</a>
+          <a class="item-value" title="5 gp / each">25</a>
+          <a class="item-type">Survival Gear</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Steel Mirror</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">5</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+    
+<!--- MAP CASE CONTAINER --->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Map Case</b>
+          <i class="item-number">2</i>
+          <p>This cylindrical leather case can hold up to ten rolled-up 
+          sheets of paper, or five rolled-up sheets of parchment.</p>
+        </div>
+        
+        <div class="item misc"> 
+        <b class="item-name">Sheet of Paper</b>
+        <i class="item-number">5</i><span>
+          <a class="item-weight">-</a>
+          <a class="item-value" title="2 gp / each">10</a>
+          <a class="item-type"> Miscellaneous </a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+        
+    </div>
+    
+<!--- HORSE CONTAINER --->
+
+      <div class="item-container">
+        <div class="stamp">
+          <b class="item-name">Draft Horse</b>
+          <i class="item-number">1</i>
+          <p>AC 10. 19 (3d10+3) HP. 40 ft speed.
+          STR 18 (+4) DEX 10 (+0) CON 12 (+1) INT 2 (-4) WIS 11 (+0) CHA 7 (-2)
+            Hooves. Melee weapon attack. +6 to hit, 5 ft reach, one target. on hit: 9 (2d4+4) Bludgeoning damage
+            540 lb carry weight</p>
+        </div>
+        
+        <div class="item misc"> 
+        <b class="item-name">Bit and Bridle</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">1</a>
+          <a class="item-value">2</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Horse Feed</b>
+        <i class="item-number">5</i><span>
+          <a class="item-weight" title="10 lb / each">50</a>
+          <a class="item-value" title="5 gp / each">25</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Ridding Saddle</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">25</a>
+          <a class="item-value">10</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
+        faucibus orci in lacinia. </p> 
+      </div>
+      
+      <div class="item misc"> 
+        <b class="item-name">Saddlebags</b>
+        <i class="item-number">1</i><span>
+          <a class="item-weight">8</a>
+          <a class="item-value">4</a>
+          <a class="item-type">Miscellaneous</a>
+        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
+        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
+        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
+        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum
+        faucibus orci in lacinia </p>
+      </div>
+    </div>
+  </div>
+</block></block>
     
     </li>
     
@@ -438,48 +1427,169 @@
 
   <br style="clear: both;" />
   
-  <div class="diag"> </div>
+  <div class="diag"><block id="diag">
+  
+  <div id="fjellfolk-dial" title="Fjellfolk">
+    The hardy fair-skinned people native to the Fjell Mountains, they're a 
+    strong and hardy people who greatly value honesty, virtue, and community.
+  </div>
+  
+  <div id="hitoic-dial" title="Hitoic People">
+    An island group of people native to the tropics of the world, they're well 
+    known for their business-orientated minds, as well as their intricate and 
+    delicate craftsmanship.
+  </div>
+  
+  <div id="fjelltal-dial" title="Fjelltal">
+    The native language of the Fjellfolk, and others who primarily live in the 
+    Fjell mountains. The language is harsh sounding, and shares many similarities
+    to dwarven languages. It's written script is runic based. 
+  </div>
+  
+  <div id="fegard-dial" title="Fégård">
+    A small Fjellfolk village on the far southern side of the mountain, facing 
+    the endless ice flows of the world. Primarily supported by sheep, goat and 
+    pig herding. The population is approximately 200 or so people, roughly 60% 
+    of it humans and 40% dwarven. Of the human population, more than 90% is
+    fjellfolk.
+  </div>
+  
+  <div id="kaldrfjoll-dial" title="Kaldrfjǫll">
+    The fjelltal name of the Fjell Mountains and the region of land they as a 
+    people claim to be theirs. The region is known for it's harsh and unforgiving
+    climate, that leaves the large expanse of land only sparsely populated. The
+    area is primarily populated with the native fjellfolk and both native and imigrant
+    dwarves. The largest settlement of the region is the harbour city of Síldvik,
+    which owes is growth to its relatively northern location and proximity to existing
+    trade routes. 
+  </div>
+  
+  <div id="golaen-dial" title="Golaen People">
+    Vestibulum ut ligula at lorem ultrices pharetra. Mauris ac felis venenatis 
+    dolor cursus porta. Duis posuere accumsan risus, sit amet iaculis eros 
+    convallis in. Fusce rutrum nibh vel diam dignissim scelerisque. Vestibulum 
+    eget ante maximus, iaculis erat sed, auctor nisi. Phasellus auctor egestas
+    mollis. Donec felis mauris, vulputate eget vestibulum vel, fringilla vel
+    tellus. Nam sodales nunc a erat aliquet euismod.
+  </div>
+  
+  <div id="xuan-dial" title="Xuán People">
+    Vestibulum ut ligula at lorem ultrices pharetra. Mauris ac felis venenatis 
+    dolor cursus porta. Duis posuere accumsan risus, sit amet iaculis eros 
+    convallis in. Fusce rutrum nibh vel diam dignissim scelerisque. Vestibulum 
+    eget ante maximus, iaculis erat sed, auctor nisi. Phasellus auctor egestas
+    mollis. Donec felis mauris, vulputate eget vestibulum vel, fringilla vel
+    tellus. Nam sodales nunc a erat aliquet euismod.
+  </div>
+  
+  <div id="keulaxen-dial" title="Keulaxen">
+    
+    <block><b>Alignment:</b> True Neutral </block>
+    <block><b>Domains:</b> Tempest, Death </block>
+    <block><b>Symbols:</b> Bones, Whales</block><br>
+    A Golaen sea god, and their primary god of worship, said to dwell on the
+    bottom of the sea, she is believed to guide the dead to their new lives. 
+    Offerings are often given to her before and during sea voyages, as a way 
+    of informing her that the ship does not contain souls bound for the next 
+    life. Some ancient legends believe her to originally be a queen of Golae 
+    Sang-eo, reborn as the large serpentine sea dragon that now claims the 
+    seas. <br><br>
+    
+    She's generally described as a Quiet and Uncaring goddess in many regards,
+    Keulaxen is not known for communicating heavily with the people who believe
+    in her, must less making her opinions known to them. Despite her heavy
+    association with death, she is not regarded as a violent or cruel god,
+    merely one bound to her duty and role in the cycle of life. <br><br>
+    
+    In Golae Sang-eo, there is always a high priestess, 
+    chosen at the age of nine, who is ritually married to the Goddess, and spends
+    her life speaking for the largely silent sea goddess. When this priestess
+    passes away, she is said to reborn as part of Keulaxen. <br><br>
+    
+    When one dies in Golae Sang-eo, their bones are bleached and carved with the
+    tales and accomplishments in their life, then cast into the sea on burial 
+    ships to be consumed by Keulaxen. She devours the ship and the bones it carries,
+    and uses the carving on the whitened bone to judge the deceased, and help in
+    her decision on where to lead the soul for it's next life.
+  </div>
+  
+  <div id="golaen-lang-dial" title="Golaen Language">
+    The official language of the old kingdom of Golae Sang-eo, which has since
+    become one of the two official languages of Běidanhab.
+  </div>
+  
+  <div id="xuan-lang-dial" title="Xuán Language">
+    The official language of the old kingdom of Xuányá Biān, which has since 
+    become one of the two official languages of Běidanhab.
+  </div>
+  
+  <div id="maoyeog-open" title="Màoyeog Pidgin">
+    A pidgin language composed of elements from both Golaen and Xuán languages, 
+    since the unification of the two kingdoms, has been seeing increased use, 
+    particularly in the cities and previous borders. 
+  </div>
+  
+  <div id="myoso-open" title="Myoso">
+    Vestibulum ut ligula at lorem ultrices pharetra. Mauris ac felis venenatis 
+    dolor cursus porta. Duis posuere accumsan risus, sit amet iaculis eros 
+    convallis in. Fusce rutrum nibh vel diam dignissim scelerisque. Vestibulum 
+    eget ante maximus, iaculis erat sed, auctor nisi. Phasellus auctor egestas
+    mollis. Donec felis mauris, vulputate eget vestibulum vel, fringilla vel
+    tellus. Nam sodales nunc a erat aliquet euismod.
+  </div>
+  
+  <div id="beidanhab-open" title="Běidanhab">
+    Vestibulum ut ligula at lorem ultrices pharetra. Mauris ac felis venenatis 
+    dolor cursus porta. Duis posuere accumsan risus, sit amet iaculis eros 
+    convallis in. Fusce rutrum nibh vel diam dignissim scelerisque. Vestibulum 
+    eget ante maximus, iaculis erat sed, auctor nisi. Phasellus auctor egestas
+    mollis. Donec felis mauris, vulputate eget vestibulum vel, fringilla vel
+    tellus. Nam sodales nunc a erat aliquet euismod.
+  </div>
+  
+</block></div>
   
   <div class="linkback"> <a href="../../index.html">Back</a> </div>
 </body>
 <footer>
   <script>
-
-      var imports = document.getElementById('dialogues');
-      var profiles = imports.import.querySelector('#diag');
-      var header = document.querySelector('.diag');
-      header.appendChild(profiles.cloneNode(true));
-      
       $( "#fjellfolk-dial" ).dialog({ 
   	    autoOpen: false,
-  	    width: 500,
-  	    maxHeight: 500,
-  	    modal: true,
+  	    width: 360,
+  	    height: 500,
   	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
   	    resizable: false
   	});
       $( "#fjellfolk-open" ).click(function() {
       $( "#fjellfolk-dial" ).dialog( "open" );
     });
     
-    $( "#hito-dial" ).dialog({ 
+    
+    $( "#hitoic-dial" ).dialog({ 
   	    autoOpen: false,
-  	    width: 500,
-  	    maxHeight: 500,
-  	    modal: true,
+  	    width: 360,
+  	    height: 500,
   	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
   	    resizable: false
   	});
-      $( "#hito-open" ).click(function() {
-      $( "#hito-dial" ).dialog( "open" );
+      $( "#hitoic-open" ).click(function() {
+      $( "#hitoic-dial" ).dialog( "open" );
     });
     
     $( "#fjelltal-dial" ).dialog({ 
   	    autoOpen: false,
-  	    width: 500,
-  	    maxHeight: 500,
-  	    modal: true,
+  	    width: 360,
+  	    height: 500,
   	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
   	    resizable: false
   	});
       $( "#fjelltal-open" ).click(function() {
@@ -488,10 +1598,12 @@
     
     $( "#fegard-dial" ).dialog({ 
   	    autoOpen: false,
-  	    width: 500,
-  	    maxHeight: 500,
-  	    modal: true,
+  	    width: 360,
+  	    height: 500,
   	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
   	    resizable: false
   	});
       $( "#fegard-open" ).click(function() {
@@ -500,15 +1612,134 @@
     
     $( "#kaldrfjoll-dial" ).dialog({ 
   	    autoOpen: false,
-  	    width: 500,
-  	    maxHeight: 500,
-  	    modal: true,
+  	    width: 360,
+  	    height: 500,
   	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
   	    resizable: false
   	});
       $( "#kaldrfjoll-open" ).click(function() {
       $( "#kaldrfjoll-dial" ).dialog( "open" );
     });
+    
+        
+    $( "#golaen-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#golaen-open" ).click(function() {
+      $( "#golaen-dial" ).dialog( "open" );
+    });
+    
+    $( "#xuan-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#xuan-open" ).click(function() {
+      $( "#xuan-dial" ).dialog( "open" );
+    });
+    
+        
+    $( "#keulaxen-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#keulaxen-open" ).click(function() {
+      $( "#keulaxen-dial" ).dialog( "open" );
+    });
+    
+    $( "#golaen-lang-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#golaen-lang-open" ).click(function() {
+      $( "#golaen-lang-dial" ).dialog( "open" );
+    });
+    
+    $( "#xuan-lang-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#xuan-lang-open" ).click(function() {
+      $( "#xuan-lang-dial" ).dialog( "open" );
+    });
+    
+    $( "#maoyeog-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#maoyeog-open" ).click(function() {
+      $( "#maoyeog-dial" ).dialog( "open" );
+    });
+    
+    $( "#myoso-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#myoso-open" ).click(function() {
+      $( "#myoso-dial" ).dialog( "open" );
+    });
+    
+    $( "#beidanhab-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#beidanhab-open" ).click(function() {
+      $( "#beidanhab-dial" ).dialog( "open" );
+    });
+    
   </script>
+  
+
 </footer>
 </html>

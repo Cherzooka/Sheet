@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "../scss/shae.css",
+	"file": "../scss/template.css",
 	"sources": [
-		"../scss/shae.scss",
+		"../scss/template.scss",
 		"../../../../../../tools/Scout-App/bower_components/compass-mixins/lib/_compass.scss",
 		"../../../../../../tools/Scout-App/bower_components/compass-mixins/lib/compass/_functions.scss",
 		"../../../../../../tools/Scout-App/bower_components/compass-mixins/lib/compass/functions/_lists.scss",
@@ -81,7 +81,7 @@
 		"../scss/_spells.scss"
 	],
 	"sourcesContent": [
-		"@import 'compass';\n\n$background: #333333;\n$font: #dddddd;\n$accent: #993629;\n\n@import 'linkback';\n@import 'tabs';\n@import 'shared';",
+		"@import 'compass';\n\n$background: #333333;\n$font: #dddddd;\n$accent: #4d8dd1;\n\n@import 'linkback';\n@import 'tabs';\n@import 'shared';",
 		"@import \"compass/functions\";\r\n@import \"compass/utilities\";\r\n@import \"compass/typography\";\r\n@import \"compass/css3\";\r\n",
 		"@import \"functions/lists\";\r\n@import \"functions/cross_browser_support\";\r\n@import \"functions/gradient_support\";\r\n@import \"functions/constants\";\r\n@import \"functions/display\";\r\n@import \"functions/colors\";\r\n",
 		"//\r\n// A partial implementation of the Ruby list functions from Compass:\r\n// https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb\r\n//\r\n\r\n\r\n// compact is part of libsass\r\n\r\n@function -compass-nth($list, $place) {\r\n  // Yep, Sass-lists are 1-indexed.\r\n  @if $place == \"first\" {\r\n    $place: 1;\r\n  }\r\n  @if $place == \"last\" {\r\n    $place: length($list);\r\n  }\r\n  @return nth($list, $place);\r\n}\r\n\r\n// compass_list can't be implemented in sass script\r\n\r\n@function -compass-space-list($item1, $item2:null, $item3:null, $item4:null, $item5:null, $item6:null, $item7:null, $item8:null, $item9:null) {\r\n  $items: ();\r\n  // Support for polymorphism.\r\n  @if type-of($item1) == 'list' {\r\n    // Passing a single array of properties.\r\n    $items: $item1;\r\n  } @else {\r\n    $items: $item1 $item2 $item3 $item4 $item5 $item6 $item7 $item8 $item9;\r\n  }\r\n\r\n  $full: first-value-of($items);\r\n\r\n  @for $i from 2 through length($items) {\r\n    $item: nth($items, $i);\r\n    @if $item != null {\r\n      $full: $full $item;\r\n    }\r\n  }\r\n\r\n  @return $full;\r\n}\r\n\r\n@function -compass-list-size($list) {\r\n  @return length($list);\r\n}\r\n\r\n@function -compass-slice($list, $start, $end: false) {\r\n  @if $end == false {\r\n    $end: length($list);\r\n  }\r\n  $full: nth($list, $start);\r\n  @for $i from $start + 1 through $end {\r\n    $full: $full, nth($list, $i);\r\n  }\r\n  @return $full;\r\n}\r\n\r\n@function reject($list, $reject1, $reject2:null, $reject3:null, $reject4:null, $reject5:null, $reject6:null, $reject7:null, $reject8:null, $reject9:null) {\r\n  $rejects: $reject1, $reject2, $reject3, $reject4, $reject5, $reject6, $reject7, $reject8, $reject9;\r\n\r\n  $full: false;\r\n  @each $item in $list {\r\n    @if index($rejects, $item) {}\r\n    @else {\r\n      @if $full {\r\n        $full: $full, $item;\r\n      }\r\n      @else {\r\n        $full: $item;\r\n      }\r\n    }\r\n  }\r\n  @return $full;\r\n}\r\n\r\n@function first-value-of($list) {\r\n  @return nth($list, 1);\r\n}\r\n\r\n@function compact($vars...) {\r\n  $separator: list-separator($vars);\r\n  $list: ();\r\n  @each $var in $vars {\r\n      @if $var {\r\n          $list: append($list, $var, $separator);\r\n      }\r\n  }\r\n  @return $list;\r\n}\r\n",

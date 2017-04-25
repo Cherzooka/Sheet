@@ -1,0 +1,282 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Jun</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />  
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../../css/jun.css">
+  <link rel="stylesheet" type="text/css" href="../../css/flaticon.css">
+  <link href="../../css/font-awesome.css" rel="stylesheet">
+  
+  <script language="JavaScript" type="text/javascript" src="../../js/jquery-3.2.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Wire+One|Nova+Mono|Amatica+SC" 
+    rel="stylesheet">
+  
+  <script language="JavaScript" type="text/javascript" src="../../js/jquery.style-my-tooltips.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../js/isotope.pkgd.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../js/fit-columns.js"></script>
+  <script language="Javascript" type="text/javascript" src="../../js/imagesloaded.pkgd.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../js/shared.js"></script>
+  
+  <link rel="import" id="basics-tab" href="tabs/basics.html">
+  <link rel="import" id="biography-tab" href="tabs/biography.html">
+  <link rel="import" id="statistics-tab" href="tabs/statistics.html">
+  <link rel="import" id="spellbook-tab" href="tabs/spellbook.html">
+  <link rel="import" id="inventory-tab" href="tabs/inventory.html">
+  <link rel="import" id="dialogues" href="../dial.html">
+
+</head>
+<body>
+  
+  <div class="gradient"> </div> 
+  <div class="side"> </div>
+  
+<!------------------------------------------------------------ TABS CONTENT --->
+
+  <ul class="tabs" role="tablist">
+  
+<!-------------------------------------------------------------- BASICS TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" 
+        tabindex="0" title="Basics"> 
+        <i class="fa fa-user-o" aria-hidden="true"></i> </label>
+      <div id="tab-content1" class="tab-content" role="tabpanel" 
+        aria-labelledby="Basics" aria-hidden="false" style="padding-bottom:0;">
+        
+    <!------------>
+    
+    <block class="basics"> </block>
+
+    </li>
+
+<!----------------------------------------------------------- BIOGRAPHY TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" 
+        tabindex="0" title="Biography"> 
+        <i class="fa fa-address-book-o" aria-hidden="true"></i> </label>
+      <div id="tab-content2" class="tab-content" role="tabpanel" 
+        aria-labelledby="Biography" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="biography"> </block>
+    
+    </li>
+    
+<!---------------------------------------------------------- STATISTICS TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3" role="tab" aria-selected="false" aria-controls="panel3" 
+        tabindex="0" title="Statistics"> 
+        <i class="fa fa-bar-chart" aria-hidden="true"></i> </label>
+      <div id="tab-content3" class="tab-content" role="tabpanel" 
+        aria-labelledby="Statistic" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="statistics"> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------- SPELLBOOK TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab4" />
+      <label for="tab4" role="tab" aria-selected="false" aria-controls="panel4" 
+        tabindex="0" title="Spellbook"> 
+        <i class="fa fa-book" aria-hidden="true"></i> </label>
+      <div id="tab-content4" class="tab-content" role="tabpanel" 
+        aria-labelledby="Spellbook" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="spellbook"> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------- INVENTORY TAB --->
+
+    <li>
+      <input type="radio" name="tabs" id="tab5">
+      <label for="tab5" role="tab" aria-selected="false" aria-controls="panel5" 
+        tabindex="0" title="Inventory" id="inventory-button"> 
+        <i class="fa fa-briefcase" aria-hidden="true"></i> </label>
+      <div id="tab-content5" class="tab-content" role="tabpanel" 
+        aria-labelledby="Inventory" aria-hidden="true">
+        
+    <!------------>
+    
+    <block class="inventory" style="padding: 0;"> </block>
+    
+    </li>
+    
+<!----------------------------------------------------------------- CLOSING ---> 
+
+  <br style="clear: both;" />
+  
+  <div class="diag"> </div>
+  
+  <div class="linkback"> <a href="../../index.html">Back</a> </div>
+</body>
+<footer>
+  <script>
+      var imports = document.getElementById('basics-tab');
+      var profiles = imports.import.querySelector('#basics');
+      var header = document.querySelector('.basics');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('biography-tab');
+      var profiles = imports.import.querySelector('#biography');
+      var header = document.querySelector('.biography');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('statistics-tab');
+      var profiles = imports.import.querySelector('#statistics');
+      var header = document.querySelector('.statistics');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('spellbook-tab');
+      var profiles = imports.import.querySelector('#spellbook');
+      var header = document.querySelector('.spellbook');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('inventory-tab');
+      var profiles = imports.import.querySelector('#inventory');
+      var header = document.querySelector('.inventory');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('dialogues');
+      var profiles = imports.import.querySelector('#diag');
+      var header = document.querySelector('.diag');
+      header.appendChild(profiles.cloneNode(true));
+      
+      $( "#golaen-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#golaen-open" ).click(function() {
+      $( "#golaen-dial" ).dialog( "open" );
+    });
+    
+    $( "#xuan-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#xuan-open" ).click(function() {
+      $( "#xuan-dial" ).dialog( "open" );
+    });
+    
+        
+    $( "#keulaxen-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#keulaxen-open" ).click(function() {
+      $( "#keulaxen-dial" ).dialog( "open" );
+    });
+    
+    $( "#golaen-lang-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#golaen-lang-open" ).click(function() {
+      $( "#golaen-lang-dial" ).dialog( "open" );
+    });
+    
+    $( "#xuan-lang-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#xuan-lang-open" ).click(function() {
+      $( "#xuan-lang-dial" ).dialog( "open" );
+    });
+    
+    $( "#maoyeog-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#maoyeog-open" ).click(function() {
+      $( "#maoyeog-dial" ).dialog( "open" );
+    });
+    
+    $( "#myoso-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#myoso-open" ).click(function() {
+      $( "#myoso-dial" ).dialog( "open" );
+    });
+    
+    $( "#beidanhab-dial" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 360,
+  	    height: 500,
+  	    closeText: "",
+  	    draggable: false,
+  	    show: true,
+  	    position: { my: "left bottom", within: ".gradient" },
+  	    resizable: false
+  	});
+      $( "#beidanhab-open" ).click(function() {
+      $( "#beidanhab-dial" ).dialog( "open" );
+    });
+    
+  </script>
+  
+
+</footer>
+</html>

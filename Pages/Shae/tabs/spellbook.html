@@ -1,3 +1,194 @@
 <block id="spellbook">
   <h1> Spellbook </h1>
+  
+  <div class="spell-sort-box">
+    <div id="spell-filters">
+    <div class="button-group" data-filter-group="level">
+      <h3>Spell Level</h3>
+        <button id="reset" class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".cantrip">Cantrip</button>
+        <button class="button" data-filter=".first">First Level</button>
+        <button class="button" data-filter=".second">Second Level</button>
+        <button class="button" data-filter=".third">Third Level</button>
+      </div>
+    <div class="button-group" data-filter-group="type">
+      <h3>School</h3>
+      <button id="reset" class="button is-checked" data-filter="">All</button>
+      <button class="button" data-filter=".abjuration">Abjuration</button>
+      <button class="button" data-filter=".conjuration">Conjuration</button>
+      <button class="button" data-filter=".divination">Divination</button>
+      <button class="button" data-filter=".enchantment">Enchantment</button>
+      <button class="button" data-filter=".evocation">Evocation</button>
+      <button class="button" data-filter=".illusion">Illusion</button>
+      <button class="button" data-filter=".necromancy">Necromancy</button>
+      <button class="button" data-filter=".transmutation">Transmutation</button>
+      </div>
+    <br><hr>
+    </div>
+    
+    <div class="spell-slots">
+      <h3>Spell Slots</h3>
+      LV 1
+      <span><b>1</b>
+      <b>2</b>
+      <b>3</b>
+      <b>4</b></span>
+      LV 2
+      <span><b>1</b>
+      <b>2</b></span>
+    </div>
+  </div>
+  
+  <div class="spells">
+    
+<!---
+    <div class="spell">
+      <b>Spell Name <i>school & level</i></b>
+      
+      <span><a class="casting">casting time</a>
+      <a class="srange">range</a>
+      <a class="components">components</a>
+      <a class="duration">duration</a></span>
+      
+      <p>Details</p>
+    </div>
+-->
+    
+    <div class="spell cantrip enchantment">
+      <b>Vicious Mockery <i>enchantment cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>You unleash a string of insults laced with subtle enchantments at a 
+      creature you can see within range. If the target can hear you (though it 
+      need not understand you), it must succeed on a Wisdom saving throw or take
+      1d4 psychic damage and have disadvantage on the next attack roll it makes
+      before the end of its next turn. <br><br>
+
+      This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th
+      level (3d4), and 17th level (4d4).</p>
+    </div>
+    
+    <div class="spell cantrip evocation">
+      <b>Light <i>evocation cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, <s title="firefly, phosphorescent moss">material</s></a>
+      <a class="duration">1 hour</a></span>
+      
+      <p>You touch one object that is no larger than 10 feet in any dimension. 
+      Until the spell ends, the object sheds bright light in a 20-foot radius 
+      and dim light for an additional 20 feet. The light can be colored as you 
+      like. Completely covering the object with something opaque blocks the 
+      light. The spell ends if you cast it again or dismiss it as an action.
+      <br><br>
+
+      If you target an object held or worn by a hostile creature, that creature
+      must succeed on a Dexterity saving throw to avoid the spell.</p>
+    </div>
+    
+    <div class="spell first divination">
+      <b>Speak with Animals <i>1st level divination</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">self</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>You gain the ability to comprehend and verbally communicate with beasts
+      for the duration. The knowledge and awareness of many beasts is limited 
+      by their intelligence, but at a minimum, beasts can give you information
+      about nearby locations and monsters, including whatever they can perceive
+      or have perceived within the past day. You might be able to persuade a 
+      beast to perform a small favor for you, at the DM’s discretion.</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Healing Word <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 bonus action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>A creature of your choice that you can see within range regains hit 
+      points equal to 1d4 + your spellcasting ability modifier. This spell has
+      no effect on undead or constructs. <br><br>
+
+      When you cast this spell using a spell slot of 2nd level or higher, the
+      healing increases by 1d4 for each slot level above 1st.</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Cure Wounds <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>A creature you touch regains a number of hit points equal to 1d8 + your
+      spellcasting ability modifier. This spell has no effect on undead or 
+      constructs.<br><br>
+
+      When you cast this spell using a spell slot of 2nd level or higher, the 
+      healing increases by 1d8 for each slot level above 1st.</p>
+    </div>
+    
+    <div class="spell second transmutation">
+      <b>Knock <i>2nd level transmutation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>Choose an object that you can see within range. The object can be a 
+      door, a box, a chest, a set of manacles, a padlock, or another object that 
+      contains a mundane or magical means that prevents access. <br><br>
+      
+      A target that is held shut by a mundane lock or that is stuck or barred 
+      becomes unlocked, unstuck, or unbarred. If the object has multiple locks,
+      only one of them is unlocked. <br><br>
+      
+      If you choose a target that is held shut with arcane lock, that spell is 
+      suppressed for 10 minutes, during which time the target can be opened and
+      shut normally. <br><br>
+      
+      When you cast the spell, a loud knock, audible from as far away as 300 
+      feet, emanates from the target object.</p>
+    </div>
+    
+    <div class="spell second illusion">
+      <b>Silence<i>2nd level illusion</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">120 feet</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration"><s class="concentration">concentration</s>, up to 10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>For the duration, no sound can be created within or pass through a 
+      20-foot-radius sphere centered on a point you choose within range. Any 
+      creature or object entirely inside the sphere is immune to thunder damage,
+      and creatures are deafened while entirely inside it.</p>
+    </div>
+    
+    <div class="spell second abjuration">
+      <b>Lesser Restoration <i>2nd level abjuration</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>You touch a creature and can end either one disease or one condition 
+      afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+    </div>
+  </div>
 </block>

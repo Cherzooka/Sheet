@@ -1,0 +1,73 @@
+.traits {
+  margin-left: 270px;
+  ul {
+      margin: 10px 0;
+  }
+  li {
+      display: list-item;
+      list-style-type: disc;
+      color: $accent;
+      span {
+        color: $font;
+        text-align: left;
+        vertical-align: top;
+      }
+  }
+  h3 {
+    color: $accent;
+    display: block;
+    font-family: 'Amatica SC', cursive;
+    padding-left: 25px;
+    font-size: 35px;
+    border-bottom: 2px solid $accent;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    text-align: left;
+    margin: 0 15px;
+    s {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+  }
+  b {
+    font-family: 'Amatica SC', cursive;
+    color: $accent;
+    font-size: 25px;
+    display: block;
+  }
+  i {
+    display: block;
+    margin-left: 50px;
+    margin-top: 5px;
+    span {
+      font-family: 'Nova Mono', monospace;
+      font-size: 20px;
+    }
+    span[title] {
+      cursor: help;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  span {
+    text-align: center;
+    display: inline-block;
+    span {
+      display: inline-block;
+      width: 40%;
+      padding: 10px 20px;
+      border-top: 2px solid $accent;
+      border-bottom: 2px solid $accent;
+      margin: 10px 5px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

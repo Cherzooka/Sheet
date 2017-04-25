@@ -1,0 +1,134 @@
+.spell-sort-box {
+  width: 250px;
+  position: fixed;
+  padding: 20px;
+  left: 730px;
+  border-left: 2px solid $accent;
+  h3 {
+    font-family: 'Amatica SC', cursive;
+    color: $accent;
+  }
+  .button {
+    background: $accent;
+    border: 0;
+    padding: 3px 10px;
+    color: $font;
+    font-size: 15px;
+    outline: 0;
+    margin: 2px;
+    border-radius: 10px;
+  }
+  .is-checked {
+    background: $font;
+    color: $accent;
+  }
+  hr {
+    border: 1px solid $accent;
+    height: 0;
+    margin-right: 20px;
+  }
+}
+
+.spell-slots {
+  span {
+    display: block;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  b {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 5px solid $accent;
+    display: inline-block;
+    font-size: 0px;
+    margin-left: 5px;
+    overflow: hidden;
+  }
+}
+
+.spells {
+  width: 630px;
+}
+
+.spell {
+  border-top: 2px solid $accent;
+  border-bottom: 2px solid $accent;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  min-height: 240px;
+  b {
+    color: $accent;
+    font-family: 'Amatica SC', cursive;
+    font-size: 35px;
+    position: relative;
+    padding-left: 20px;
+    top: -20px;
+    display: block;
+  }
+  i {
+    font-size: 16px;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    color: $font;
+    float: right;
+    font-weight: normal;
+  }
+  span {
+    display: inline-block;
+    float: right;
+    position: relative;
+    width: 30%;
+    padding: 10px;
+    border-top: 2px solid $accent;
+    border-bottom: 2px solid $accent;
+  }
+  p {
+    width: 60%;
+    text-align: justify;
+    display: inline-block;
+    -webkit-margin-before: 0;
+  }
+  a {
+    display: block;
+    &::before {
+      margin-right: 5px;
+      color: $accent;
+    }
+  }
+  s {
+    text-decoration: none;
+    cursor: help;
+    border-bottom: 1px solid $accent;
+  }
+  .casting {
+    &::before {
+      content: "Casting Time:";
+    }
+  }
+  .srange {
+    &::before {
+      content: "Range:";
+    }
+  }
+  .components {
+    &::before {
+      content: "Components:";
+    }
+  }
+  .duration {
+    &::before {
+      content: "Duration:";
+    }
+  }
+  .ritual {
+    display: block;
+    text-align: center;
+    color: $font;
+    background: $accent;
+    margin: 0 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: help;
+  }
+}

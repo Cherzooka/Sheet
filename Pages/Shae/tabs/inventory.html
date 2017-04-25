@@ -73,12 +73,12 @@
         <div id="sorts" class="button-group">
           <h3>Sorting</h3>
           <button id="reset" class="button is-checked" data-sort-by="original-order">reset</button>
-          <button class="button" data-sort-by="name" data-sort-direction="asc"><i class="flaticon-sort-by-alphabet" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="value" data-sort-direction="asc"><i class="flaticon-sort-by-numeric-order" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="count" data-sort-direction="asc"><i class="flaticon-sort-by-attributes-interface-button-option" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="name" data-sort-direction="desc"><i class="flaticon-sort-reverse-alphabetical-order" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="value" data-sort-direction="desc"><i class="flaticon-sort-by-order" aria-hidden="true"></i></button>
-          <button class="button" data-sort-by="count" data-sort-direction="desc"><i class="flaticon-sort-by-attributes" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Name, Ascending" data-sort-by="name" data-sort-direction="asc"><i class="flaticon-sort-by-alphabet" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Value, Ascending" data-sort-by="value" data-sort-direction="asc"><i class="flaticon-sort-by-numeric-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Amount, Ascending" data-sort-by="count" data-sort-direction="asc"><i class="flaticon-sort-by-attributes-interface-button-option" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Name, Descending" data-sort-by="name" data-sort-direction="desc"><i class="flaticon-sort-reverse-alphabetical-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Value, Descending" data-sort-by="value" data-sort-direction="desc"><i class="flaticon-sort-by-order" aria-hidden="true"></i></button>
+          <button class="button" title="Sort by Amount, Descending" data-sort-by="count" data-sort-direction="desc"><i class="flaticon-sort-by-attributes" aria-hidden="true"></i></button>
         </div>
       </div></div>
       
@@ -106,6 +106,7 @@
       <div class="item-container">
         <div class="stamp">
           <b class="item-name">Carried</b>
+          <p> 46 lb. / 240 lb. carry weight.</p>
         </div>
         
       <div class="item melee-weapon"> 
@@ -115,9 +116,7 @@
           <a class="item-value">10</a>
           <a class="item-type"> Melee Weaponry </a>
           <a> Slashing (1d8) </a>
-          <a title="This weapon can be used with one or two hands. A damage 
-          value in paratheses appears with the property- the damage when the 
-          weapon is used with two hands to make a melee attack.">Versatile (1d10)</a>
+          <a class="versatile">Versatile (1d10)</a>
         </span><p> A double-headed axe with a long two-handed handle. The head 
         is a decorated steel, and the handle of carved rowan. Overall, despite 
         it's apparent age, it's a well made and quality weapon. The decoration 
@@ -145,10 +144,8 @@
           <a class="item-type"> Melee Weaponry </a>
           <a class="item-type"> Ranged Weaponry </a>
           <a> Slashing (1d6) </a>
-          <a title="A light weapon is small and easy to handle, making it ideal 
-          for use when fighting with two weapons.">Light</a>
-          <a title="If a weapon has the thrown property, you can throw the 
-          weapon to make a ranged attack.">Thrown (20/60)</a>
+          <a class="light">Light</a>
+          <a class="thrown">Thrown (20/60)</a>
         </span><p> A common handaxe, with an simple iron head, and a rowan 
         handle. Primarily used for chopping word, or other basic tasks, but can 
         make a decent weapon when needed. </p> 
@@ -161,8 +158,8 @@
           <a class="item-value">25</a>
           <a class="item-type">Ranged Weaponry</a>
           <a>Piercing (1d6)</a>
-          <a>Range (80/320)</a>
-          <a>Two Handed</a>
+          <a class="range">Range (80/320)</a>
+          <a class="twohanded">Two Handed</a>
         </span><p> A simple shortbow made of yew. While simplistic and non 
         decorated, it's a quality made bow. </p> 
       </div>
@@ -170,10 +167,9 @@
       <div class="item trinket"> 
         <b class="item-name">Wooden Ring</b>
         <i class="item-number">1</i><span>
-          <a class="item-weight">0</a>
-          <a class="item-value">#</a>
+          <a class="item-weight">-</a>
+          <a class="item-value">3</a>
           <a class="item-type"> Trinket </a>
-          <a title="Further Details">[tag]</a>
         </span><p> A simple wooden ring made of yew, adorned with fjelltal 
         runes. </p> 
       </div>
@@ -186,10 +182,10 @@
           <a class="item-type"> Melee Weaponry </a>
           <a class="item-type"> Ranged Weaponry </a>
           <a> Piercing (1d4) </a>
-          <a> Finesse </a>
-          <a> Light </a>
-          <a> Thrown (20/60) </a>
-        </span><p> Simple Iron daggers for a variety of uses, from fighting, 
+          <a class="finesse"> Finesse </a>
+          <a class="light"> Light </a>
+          <a class="thrown"> Thrown (20/60) </a>
+        </span><p> Basic Iron daggers for a variety of uses, from fighting, 
         knife throwing, to letter opening. </p> 
       </div>
       
@@ -221,12 +217,8 @@
           <a class="item-weight">5</a>
           <a class="item-value">2</a>
           <a class="item-type">Survival Gear</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A waterskin made of Elk bladder, when filled holds 4 pints 
+        of liquid. </p> 
       </div>
       
       <div class="item survival-gear"> 
@@ -235,12 +227,8 @@
           <a class="item-weight" title=".5 lb / each">1</a>
           <a class="item-value" title="50 gp / each">100</a>
           <a class="item-type">Survival Gear</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A glass vial containing a shimmering red liquid. When
+        drunk, restores 2d4+2 hit points.</p> 
       </div>
         
     </div>
@@ -251,7 +239,9 @@
         <div class="stamp">
           <b class="item-name">Quiver</b>
           <i class="item-number">1</i>
-          <p>.</p>
+          <span><a>Carried</a></span>
+          <p>An elk leather quiver, while simplistic in detail and make, it's of
+          decent quality.</p>
         </div>
         
       <div class="item ranged-weapon"> 
@@ -283,12 +273,8 @@
           <a class="item-weight">0</a>
           <a class="item-value">10</a>
           <a class="item-type"> Miscellaneous </a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A small glass bottle, containing a little more than one ounce 
+        of black colored writting ink.</p> 
       </div>
       
       <div class="item trinket"> 
@@ -297,7 +283,7 @@
           <a class="item-weight">1</a>
           <a class="item-value">30</a>
           <a title="Item-type">Trinket</a>
-          <a> Musical Instrument </a>
+          <a class="musical"> Musical Instrument </a>
         </span><p> An intricately decorated and well worn viol made of maple. 
         It appears to be well used, but remarkably well maintained. </p> 
       </div>
@@ -308,12 +294,7 @@
           <a class="item-weight">-</a>
           <a class="item-value">2</a>
           <a class="item-type"> Miscellaneous </a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A well used feathered ink pen. </p> 
       </div>
       
       <div class="item survival-gear"> 
@@ -341,12 +322,8 @@
           <a class="item-weight">-</a>
           <a class="item-value">5</a>
           <a class="item-type">Miscellaneous</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p>
+        </span><p> A glass vial containing a pale orange scented perfume oil. 
+        The oil is scented with sandalwood, and other floral notes. </p>
       </div>
       
       <div class="item misc"> 
@@ -355,12 +332,8 @@
           <a class="item-weight">-</a>
           <a class="item-value">5</a>
           <a class="item-type">Miscellaneous</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A red colored sealing wax, contained with an opaque bottle,
+        used primarily for sealing letters</p> 
       </div>
       
       <div class="item misc"> 
@@ -369,12 +342,7 @@
           <a class="item-weight">-</a>
           <a class="item-value">2</a>
           <a class="item-type">Miscellaneous</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        </span><p> A small bar of unscented soap. </p> 
       </div>
       
       <div class="item misc"> 
@@ -383,13 +351,8 @@
           <a class="item-weight">-</a>
           <a class="item-value">1</a>
           <a class="item-type">Miscellaneous</a>
-          <a>Gaming Set</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+          <a class="gaming">Gaming Set</a>
+        </span><p> A pair of wooden dice, used primarily for various games. </p> 
       </div>
       
       <div class="item misc"> 
@@ -398,13 +361,10 @@
           <a class="item-weight">-</a>
           <a class="item-value">5</a>
           <a class="item-type">Miscellaneous</a>
-          <a>Gaming Set</a>
-        </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
-        lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
-        turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
-        Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+          <a class="gaming">Gaming Set</a>
+        </span><p> A set of playing cards, for playing a large variety of games.
+        The deck is clearly of Fjellfolk origin, decorated with Fjelltal runes,
+        and other Fjellfolk iconography. </p> 
       </div>
       
       <div class="item misc"> 
@@ -413,7 +373,7 @@
           <a class="item-weight">5</a>
           <a class="item-value">10</a>
           <a class="item-type">Miscellaneous</a>
-          <a>Artisan's Tools</a>
+          <a class="artisan">Artisan's Tools</a>
         </span><p> Cras sollicitudin in risus in pulvinar. Duis venenatis ante 
         lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
         turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
@@ -508,7 +468,7 @@
       
       <div class="item survival-gear"> 
         <b class="item-name">Rations (1 day)</b>
-        <i class="item-number">#</i><span>
+        <i class="item-number">5</i><span>
           <a class="item-weight" title="2 lb / each">10</a>
           <a class="item-value" title="5 gp / each">25</a>
           <a class="item-type">Survival Gear</a>
@@ -568,7 +528,10 @@
         <div class="stamp">
           <b class="item-name">Draft Horse</b>
           <i class="item-number">1</i>
-          <p>540 lb carry weight, 40 ft speed</p>
+          <p>AC 10. 19 (3d10+3) HP. 40 ft speed.
+          STR 18 (+4) DEX 10 (+0) CON 12 (+1) INT 2 (-4) WIS 11 (+0) CHA 7 (-2)
+            Hooves. Melee weapon attack. +6 to hit, 5 ft reach, one target. on hit: 9 (2d4+4) Bludgeoning damage
+            540 lb carry weight</p>
         </div>
         
         <div class="item misc"> 
@@ -623,11 +586,9 @@
         lacus, ultrices pharetra lectus pellentesque sed. Suspendisse in sem 
         turpis. Vestibulum dui ex, posuere auctor ornare sed, finibus ac felis. 
         Donec metus quam, sodales at sapien id, sagittis mollis est. In id 
-        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum 
-        faucibus orci in lacinia. </p> 
+        dolor ac ipsum consequat mollis a sit amet felis. Quisque vestibulum
+        faucibus orci in lacinia </p>
       </div>
-        
     </div>
-
-    </div>
+  </div>
 </block>
