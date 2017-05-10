@@ -406,12 +406,11 @@ h3 {
 /* line 19, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat-block {
   float: left;
-  transform: scale(0.9, 0.9);
   position: relative;
-  top: -45px;
+  width: 300px;
 }
 
-/* line 26, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 25, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat {
   height: 100px;
   width: 100px;
@@ -426,7 +425,7 @@ h3 {
   user-select: none;
 }
 
-/* line 35, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 34, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat span {
   font-size: 60px;
   font-family: 'Nova Mono', monospace;
@@ -437,7 +436,7 @@ h3 {
   bottom: 40px;
 }
 
-/* line 44, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 43, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat b {
   font-family: 'Wire One', sans-serif;
   font-size: 40px;
@@ -450,7 +449,7 @@ h3 {
   width: 50px;
 }
 
-/* line 55, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 54, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat i {
   font-family: 'Noto Sans', sans-serif;
   background: #dddddd;
@@ -466,7 +465,7 @@ h3 {
   display: inline-block;
 }
 
-/* line 69, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 68, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat .stat-skills {
   position: relative;
   width: 200px;
@@ -476,7 +475,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 76, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 75, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+.stat .stat-skills block[title] {
+  cursor: help;
+}
+
+/* line 78, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat .stat-skills i {
   border: none;
   font-family: FontAwesome;
@@ -494,7 +498,7 @@ h3 {
   position: initial;
 }
 
-/* line 92, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 94, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat .stat-skills span {
   font-size: 14px;
   font-family: 'Noto Sans', sans-serif;
@@ -502,13 +506,18 @@ h3 {
   margin-left: 20px;
 }
 
-/* line 97, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 99, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stat .stat-skills span i {
   font-size: 16px;
   margin-bottom: -3px;
 }
 
-/* line 105, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 104, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+.stat .stat-skills span[title] {
+  cursor: help;
+}
+
+/* line 110, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .alignment {
   width: 120px;
   height: 120px;
@@ -518,7 +527,7 @@ h3 {
   right: -130px;
 }
 
-/* line 112, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 117, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .alignment h3 {
   transform: rotate(-45deg);
   cursor: default;
@@ -528,12 +537,12 @@ h3 {
   right: 50px;
 }
 
-/* line 122, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 127, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .turn {
   transform: rotate(-90deg);
 }
 
-/* line 126, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 131, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .alignment-label {
   z-index: 9999;
   position: relative;
@@ -546,7 +555,7 @@ h3 {
   user-select: none;
 }
 
-/* line 135, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 140, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 th, td {
   background: #dddddd;
   border: 5px solid #333333;
@@ -557,7 +566,7 @@ th, td {
   border-radius: 5px;
 }
 
-/* line 145, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 150, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 table .selected {
   background: #2674AE;
   cursor: help;
@@ -568,7 +577,7 @@ table .selected {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 152, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 157, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 table {
   border-collapse: collapse;
   pointer-events: none;
@@ -577,7 +586,7 @@ table {
   width: 100px;
 }
 
-/* line 160, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 165, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 #hpcontainer {
   cursor: default;
   padding: 0 25px;
@@ -588,7 +597,7 @@ table {
   user-select: none;
 }
 
-/* line 165, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 170, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 #hpcontainer #hp {
   font-family: 'Wire One', sans-serif;
   font-size: 40px;
@@ -599,7 +608,7 @@ table {
   text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black;
 }
 
-/* line 174, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 179, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 #hpcontainer .hpbar {
   position: relative;
   height: 20px;
@@ -608,7 +617,7 @@ table {
   border-radius: 50px;
 }
 
-/* line 181, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 186, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 #hpcontainer .hpbarinner {
   position: absolute;
   height: 20px;
@@ -617,7 +626,7 @@ table {
   border-radius: 50px;
 }
 
-/* line 190, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 195, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 #basicscontainer {
   width: 500px;
   float: right;
@@ -626,45 +635,75 @@ table {
   margin-top: 25px;
 }
 
-/* line 198, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 203, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .stattbox {
   display: inline-block;
   text-align: right;
-  width: 50%;
+  width: 60%;
   float: right;
-  padding-right: 40px;
   margin-bottom: 15px;
-}
-
-/* line 207, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
-.statt {
-  border: 2px solid #2674AE;
-  height: 65px;
-  display: inline-block;
-  text-align: center;
+  padding-right: 10px;
 }
 
 /* line 212, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
-.statt b {
-  background: #2674AE;
-  display: inline-block;
-  position: relative;
-  top: 40px;
+#hit-die {
+  display: block;
   width: 100%;
-  font-family: 'Wire One', sans-serif;
-  font-size: 25px;
 }
 
-/* line 221, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 215, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+#hit-die span {
+  font-size: 35px;
+}
+
+/* line 218, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+#hit-die i {
+  font-size: 35px;
+  color: #2674AE;
+  position: relative;
+  left: 15px;
+  display: inline-block;
+}
+
+/* line 227, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+.statt {
+  border-bottom: 2px solid #2674AE;
+  height: 55px;
+  width: 147px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 233, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+.statt b {
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Wire One', sans-serif;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* line 242, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .statt span {
   font-family: 'Nova Mono', monospace;
   display: inline-block;
-  position: relative;
   font-size: 40px;
-  top: -35px;
+  float: right;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* line 230, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 250, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+.statt span[title] {
+  cursor: help;
+}
+
+/* line 255, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container {
   display: inline-block;
   float: right;
@@ -674,13 +713,13 @@ table {
   padding-bottom: 100px;
 }
 
-/* line 237, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 262, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container .social-stat {
   padding: 0 20px;
   margin: 15px 0;
 }
 
-/* line 241, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 266, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container h1 {
   color: #dddddd;
   position: relative;
@@ -699,7 +738,7 @@ table {
   cursor: help;
 }
 
-/* line 258, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 283, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container h2 {
   color: #dddddd;
   font-size: 25px;
@@ -714,13 +753,13 @@ table {
   right: 7px;
 }
 
-/* line 271, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 296, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container .stat-bar-container {
   position: relative;
   margin: 0 90px;
 }
 
-/* line 275, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 300, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container .stat-bar {
   position: relative;
   height: 15px;
@@ -730,25 +769,25 @@ table {
   width: 47%;
 }
 
-/* line 283, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 308, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container #right-bar {
   background: #2674AE;
   border-radius: 10px 0 0 0;
 }
 
-/* line 287, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 312, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container #left-bar {
   border-radius: 0 10px 0 0;
 }
 
-/* line 290, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 315, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container .stat-bar-inner {
   position: absolute;
   height: 15px;
   background-color: #2674AE;
 }
 
-/* line 295, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
+/* line 320, C:/Users/Cher/Documents/GitHub/Sheet/scss/_basics.scss */
 .social-stats-container #right-inner {
   background: #dddddd;
   border-radius: 6px 0 0 0;
@@ -868,30 +907,66 @@ table {
 }
 
 /* line 1, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
-.traits {
-  margin-left: 270px;
+.stat-left {
+  float: left;
+  width: 280px;
 }
 
-/* line 3, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 6, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+.misc-details {
+  display: inline-block;
+}
+
+/* line 8, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+.misc-details strong {
+  display: block;
+  color: #2674AE;
+  text-align: center;
+  border-top: 2px solid #2674AE;
+  border-bottom: 2px solid #2674AE;
+  padding: 10px 0;
+  font-family: 'Amatica SC', cursive;
+  font-size: 25px;
+}
+
+/* line 18, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+.misc-details span {
+  display: block;
+  padding: 10px;
+}
+
+/* line 22, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+.misc-details b {
+  color: #2674AE;
+  position: relative;
+  right: 5px;
+}
+
+/* line 30, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+.traits {
+  margin-left: 300px;
+}
+
+/* line 32, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits ul {
   margin: 10px 0;
 }
 
-/* line 6, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 35, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits li {
   display: list-item;
   list-style-type: disc;
   color: #2674AE;
 }
 
-/* line 10, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 39, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits li span {
   color: #dddddd;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 16, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 45, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits h3 {
   color: #2674AE;
   display: block;
@@ -903,7 +978,7 @@ table {
   margin-top: 10px;
 }
 
-/* line 26, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 55, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits p {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -911,7 +986,7 @@ table {
   margin: 0 15px;
 }
 
-/* line 31, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 60, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits p s {
   text-decoration: none;
   display: block;
@@ -920,7 +995,7 @@ table {
   margin-bottom: 10px;
 }
 
-/* line 39, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 68, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits b {
   font-family: 'Amatica SC', cursive;
   color: #2674AE;
@@ -928,32 +1003,32 @@ table {
   display: block;
 }
 
-/* line 45, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 74, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits i {
   display: block;
   margin-left: 50px;
   margin-top: 5px;
 }
 
-/* line 49, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 78, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits i span {
   font-family: 'Nova Mono', monospace;
   font-size: 20px;
 }
 
-/* line 53, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 82, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits i span[title] {
   cursor: help;
   border-bottom: 1px solid #2674AE;
 }
 
-/* line 58, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 87, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits span {
   text-align: center;
   display: inline-block;
 }
 
-/* line 61, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 90, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits span span {
   display: inline-block;
   width: 40%;
@@ -963,7 +1038,7 @@ table {
   margin: 10px 5px;
 }
 
-/* line 68, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
+/* line 97, C:/Users/Cher/Documents/GitHub/Sheet/scss/_stats.scss */
 .traits span span p {
   margin: 0;
 }

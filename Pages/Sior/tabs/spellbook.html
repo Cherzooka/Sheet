@@ -1,0 +1,177 @@
+<block id="spellbook">
+  <h1> Spellbook </h1>
+  
+  <div class="spell-sort-box">
+    <div id="spell-filters">
+    <div class="button-group" data-filter-group="level">
+      <h3>Spell Level</h3>
+        <button id="reset" class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".cantrip">Cantrip</button>
+        <button class="button" data-filter=".first">First Level</button>
+        <button class="button" data-filter=".second">Second Level</button>
+        <button class="button" data-filter=".third">Third Level</button>
+      </div>
+    <div class="button-group" data-filter-group="type">
+      <h3>School</h3>
+      <button id="reset" class="button is-checked" data-filter="">All</button>
+      <button class="button" data-filter=".abjuration">Abjuration</button>
+      <button class="button" data-filter=".conjuration">Conjuration</button>
+      <button class="button" data-filter=".divination">Divination</button>
+      <button class="button" data-filter=".enchantment">Enchantment</button>
+      <button class="button" data-filter=".evocation">Evocation</button>
+      <button class="button" data-filter=".illusion">Illusion</button>
+      <button class="button" data-filter=".necromancy">Necromancy</button>
+      <button class="button" data-filter=".transmutation">Transmutation</button>
+      </div>
+    <br><hr>
+    </div>
+    
+    <div class="spell-slots">
+      <h3>Spell Slots</h3>
+      LV 1
+      <span><b>1</b>
+      <b>2</b></span>
+    </div>
+  </div>
+  
+  <div class="spells">
+    
+<!---
+    <div class="spell">
+      <b>Spell Name <i>school & level</i></b>
+      
+      <span><a class="casting">casting time</a>
+      <a class="srange">range</a>
+      <a class="components">components</a>
+      <a class="duration">duration</a></span>
+      
+      <p>Details</p>
+    </div>
+-->
+    <div class="spell cantrip transmutation">
+      <b>Druidcraft <i>transmutation cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">30 feet</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>Whispering to the spirits of nature, you create one of the following 
+      effects within range: <br><br>
+
+      — You create a tiny, harmless sensory effect that predicts what 
+        the weather will be at your location for the next 24 hours. The effect
+        might manifest as a golden orb for clear skies, a cloud for rain, 
+        falling snowflakes for snow, and so on. This effect persists for 1 
+        round.<br><br>
+        
+      — You instantly make a flower bloom, a seed pod open, or a 
+        leaf bud bloom.<br><br>
+
+      — You create an instantaneous, harmless sensory effect, such as
+        falling leaves, a puff of wind, the sound of a small animal, or the 
+        faint order of skunk. The effect must fit in a 5-foot cube.<br><br>
+        
+      — You instantly light or snuff out a candle, a torch, or a
+        small campfire.
+      </p>
+    </div>
+
+    <div class="spell cantrip conjuration">
+      <b>Produce Flame <i>conjuration cantrip</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">self</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">10 minutes</a></span>
+      
+      <p>A flickering flame appears in your hand. The flame remains there for 
+      the duration and harms neither you nor your equipment. The flame sheds
+      bright light in a 10-foot radius and dim light for an additional 10 feet.
+      The spell ends if you dismiss it as an action or if you cast it again.
+      <br><br>
+
+      You can also attack with the flame, although doing so ends the spell. When
+      you cast this spell, or as an action on a later turn, you can hurl the 
+      flame at a creature within 30 feet of you. Make a ranged spell attack. 
+      On a hit, the target takes 1d8 fire damage. <br><br>
+
+      This spell’s damage increases by 1d8 when you reach 5th level (2d8), 
+      11th level (3d8), and 17th level (4d8).</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Faerie Fire <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">60 feet</a>
+      <a class="components">verbal</a>
+      <a class="duration"><s class="concentration">concentration</s>, up to 1 minute</a></span>
+      
+      <p>Each object in a 20-foot cube within range is outlined in blue, green,
+      or violet light (your choice). Any creature in the area when the spell is
+      cast is also outlined in light if it fails a Dexterity saving throw. For
+      the duration, objects and affected creatures shed dim light in a 10-foot 
+      radius.<br><br>
+
+      Any attack roll against an affected creature or object has advantage if 
+      the attacker can see it, and the affected creature or object can’t benefit
+      from being invisible.</p>
+    </div>
+    
+    <div class="spell first evocation">
+      <b>Cure Wounds <i>1st level evocation</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">touch</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration">instantaneous</a></span>
+      
+      <p>A creature you touch regains a number of hit points equal to 1d8 + your
+      spellcasting ability modifier. This spell has no effect on undead or
+      constructs. <br><br>
+
+      At Higher Levels. When you cast this spell using a spell slot of 2nd 
+      level or higher, the healing increases by 1d8 for each slot level above 
+      1st.</p>
+    </div>
+    
+    <div class="spell first divination">
+      <b>Detect Magic <i>1st level divination</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">self</a>
+      <a class="components">verbal, somatic</a>
+      <a class="duration"><s class="concentration">concentration</s>, up to 10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>For the duration, you sense the presence of magic within 30 feet of you.
+      If you sense magic in this way, you can use your action to see a faint 
+      aura around any visible creature or object in the area that bears magic,
+      and you learn its school of magic, if any. <br><br>
+
+      The spell can penetrate most barriers, but it is blocked by 1 foot of 
+      stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or 
+      dirt.</p>
+    </div>
+    
+    <div class="spell first divination">
+      <b>Detect Poison and Disease <i>1st level divination</i></b>
+      
+      <span><a class="casting">1 action</a>
+      <a class="srange">self</a>
+      <a class="components">verbal, somatic, <s title="a yew leaf">material</s></a>
+      <a class="duration"><s class="concentration">concentration</s>, up to 10 minutes</a>
+      <a class="ritual">Ritual</a></span>
+      
+      <p>For the duration, you can sense the presence and location of poisons, 
+      poisonous creatures, and diseases within 30 feet of you. You also identify
+      the kind of poison, poisonous creature, or disease in each case. <br><br>
+
+      The spell can penetrate most barriers, but it is blocked by 1 foot of 
+      stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood 
+      or dirt.</p>
+    </div>
+
+  </div>
+</block>

@@ -18,9 +18,8 @@
 
 .stat-block {
   float: left;
-  transform: scale(0.9, 0.9);
   position: relative;
-  top: -45px;
+  width: 300px;
 }
 
 .stat {
@@ -73,6 +72,9 @@
     top: -161px;
     right: -130px;
     font-size: 15px;
+    block[title] {
+      cursor: help;
+    }
     i {
       border: none;
       font-family: FontAwesome;
@@ -98,6 +100,9 @@
         font-size: 16px;
         margin-bottom: -3px;
       }
+    }
+    span[title] {
+      cursor: help;
     }
   }
 }
@@ -198,32 +203,52 @@ table {
 .stattbox {
   display: inline-block;
   text-align: right;
-  width: 50%;
+  width: 60%;
   float: right;
-  padding-right: 40px;
   margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+#hit-die {
+  display: block;
+  width: 100%;
+  span {
+    font-size: 35px;
+  }
+  i {
+    font-size: 35px;
+    color: $accent;
+    position: relative;
+    left: 15px;
+    display: inline-block;
+  }
 }
 
 .statt {
-  border: 2px solid $accent;
-  height: 65px;
-  display: inline-block;
+  border-bottom: 2px solid $accent;
+  height: 55px;
+  width: 147px;
   text-align: center;
+  display: inline-block;
   b {
-    background: $accent;
     display: inline-block;
-    position: relative;
-    top: 40px;
-    width: 100%;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
     font-family: 'Wire One', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    margin-right: 10px;
   }
   span {
     font-family: 'Nova Mono', monospace;
     display: inline-block;
-    position: relative;
     font-size: 40px;
-    top: -35px;
+    float: right;
+    cursor: default;
+    @include user-select(none);
+  }
+  span[title] {
+    cursor: help;
   }
 }
 

@@ -1,5 +1,34 @@
+.stat-left {
+  float: left;
+  width: 280px;
+}
+
+.misc-details {
+  display: inline-block;
+  strong {
+    display: block;
+    color: $accent;
+    text-align: center;
+    border-top: 2px solid $accent;
+    border-bottom: 2px solid $accent;
+    padding: 10px 0;
+    font-family: 'Amatica SC', cursive;
+    font-size: 25px;
+  }
+  span {
+    display: block;
+    padding: 10px;
+  }
+  b {
+    color: $accent;
+    position: relative;
+    right: 5px;
+  }
+}
+
+
 .traits {
-  margin-left: 270px;
+  margin-left: 300px;
   ul {
       margin: 10px 0;
   }
